@@ -1,0 +1,10 @@
+<h1>Admin Portal</h1>
+
+<%= form_with(url: refresh_availability_path, method: :get) do |f| %>
+  <h3><%= f.label('Service Name') %></h3>
+  <p id='netflix-radio'><%= f.radio_button :service, 'netflix' %>Netflix</p>
+  <p id='hulu-radio'><%= f.radio_button :service, 'hulu' %>Hulu</p>
+  <p id='amazon-radio'><%= f.radio_button :service, 'amazon' %>Amazon Prime Video</p>
+
+  <%= submit_tag("Refresh Availability") %>
+<% end %>
