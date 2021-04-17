@@ -285,12 +285,93 @@
           null,
           null,
           1,
+          null,
+          null,
+          1,
+          1,
           null
         ]
       },
       "/Users/nickking/turing/5module/plenty_of_flicks/plenty_of_flicks_fe/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/nickking/turing/5module/plenty_of_flicks/plenty_of_flicks_fe/spec/features/welcome/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nickking/turing/5module/plenty_of_flicks/plenty_of_flicks_fe/app/controllers/admin_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nickking/turing/5module/plenty_of_flicks/plenty_of_flicks_fe/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/nickking/turing/5module/plenty_of_flicks/plenty_of_flicks_fe/app/facades/refresh_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nickking/turing/5module/plenty_of_flicks/plenty_of_flicks_fe/app/services/refresh_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/nickking/turing/5module/plenty_of_flicks/plenty_of_flicks_fe/app/poros/refresh.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -302,14 +383,8 @@
           null,
           null
         ]
-      },
-      "/Users/nickking/turing/5module/plenty_of_flicks/plenty_of_flicks_fe/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1618344281
+    "timestamp": 1618385821
   }
 }

@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/services/update_availability?service=netflix"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4dfd1d28a79345a76a6e37c0f17c4fac"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f9b69137-3eaa-4a1d-85fd-b55f4130c8ff
+      X-Runtime:
+      - '34.640670'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":null,"type":"service_refresh","attributes":{"name":"Netflix","movie_count":3390}}}'
+  recorded_at: Wed, 14 Apr 2021 07:07:57 GMT
+recorded_with: VCR 6.0.0
