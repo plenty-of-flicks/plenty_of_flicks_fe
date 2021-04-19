@@ -10,9 +10,9 @@ class AdminController < ApplicationController
   end
 
   def update_movie_details
-    response = AdminFacade.update_movie_details
-    output = "#{response[:movies_updated]} movies updated. Update status: #{response[:update_status]}"
-    
+    update = AdminFacade.update_movie_details
+    output = "#{update.movie_count} movies updated. Update status: #{update.status}"
+
     redirect_to admin_index_path, notice: output
   end
 end
