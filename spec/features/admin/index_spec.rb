@@ -18,4 +18,13 @@ describe 'admin index' do
     expect(current_path).to eq(admin_index_path)
     expect(page).to have_content('Netflix has been updated')
   end
+
+  it 'populate missing movie details button', :vcr do
+    visit admin_index_path
+
+    click_button 'Update Movie Details'
+
+    expect(current_path).to eq(admin_index_path)
+    expect(page).to have_content('movies updated. Update status:')
+  end
 end
