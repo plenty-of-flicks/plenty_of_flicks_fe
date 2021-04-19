@@ -25,6 +25,6 @@ describe 'admin index' do
     click_button 'Update Movie Details'
 
     expect(current_path).to eq(admin_index_path)
-    expect(page).to have_content('Movie details population is complete - all movies are populated.')
+    expect(page).to have_content('movies updated. Update status:')
   end
 end

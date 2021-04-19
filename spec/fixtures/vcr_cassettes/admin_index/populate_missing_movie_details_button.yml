@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/populate_details"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"2bd46e1de4ee943f6b6c1e92c8dbb075"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 25291e79-aaae-49f1-bfa3-6741d7622d76
+      X-Runtime:
+      - '0.086183'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"movies_updated":0,"update_status":"Complete - all movies are populated."}'
+  recorded_at: Mon, 19 Apr 2021 02:55:00 GMT
+recorded_with: VCR 6.0.0
