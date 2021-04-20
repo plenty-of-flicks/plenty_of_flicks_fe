@@ -21,6 +21,19 @@ describe 'profile page' do
     expect(current_path).to eq(root_path)
   end
 
+  it 'edit profile button redirects to profile edit page', :vcr do
+    stub_omniauth
+
+    visit root_path
+    click_link('Log In')
+    visit profile_path
+
+    expect(page).to have_button('Edit Profile')
+    click_button('Edit Profile')
+
+    expect(current_path).to eq(profile_edit_path)
+  end
+
   def stub_omniauth
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
