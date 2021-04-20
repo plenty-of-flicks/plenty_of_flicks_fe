@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   # user profile
   get '/profile', to: 'profile#show', as: :profile
+  get '/profile/edit', to: 'profile#edit', as: :profile_edit
 
   # admin routes
   get '/admin/refresh_availability', to: 'admin#refresh_availability', as: :refresh_availability

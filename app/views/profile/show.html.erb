@@ -4,3 +4,5 @@
 <h3>Last Name: <%= current_user.last_name %></h3>
 <h3>Email: <%= current_user.email %></h3>
 <h3>User Image: <%= image_tag(current_user.image) %></h3>
+
+<%= button_to 'Edit Profile', profile_edit_path, method: :get %>
