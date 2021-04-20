@@ -15,6 +15,12 @@ describe 'profile page' do
     expect(page).to have_css("img[src*='https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg']")
   end
 
+  it 'redirects to welcome page if user is not logged in', :vcr do
+    visit profile_path
+
+    expect(current_path).to eq(root_path)
+  end
+
   def stub_omniauth
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
