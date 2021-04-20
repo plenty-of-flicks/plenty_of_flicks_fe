@@ -17,7 +17,7 @@ describe 'welcome page' do
     expect(page).to have_content('Welcome, Nick!')
   end
 
-  xit 'user can log out', :vcr do
+  it 'user can log out', :vcr do
     stub_omniauth
     visit root_path
 

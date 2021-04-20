@@ -8,6 +8,12 @@ class SessionsController < ApplicationController
     redirect_to root_path, notice: "Welcome, #{@current_user.first_name}!"
   end
 
+  def destroy
+    session.clear
+
+    redirect_to root_path, notice: 'You are now logged out.'
+  end
+
   protected
 
   def user_params
