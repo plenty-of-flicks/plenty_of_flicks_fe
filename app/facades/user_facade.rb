@@ -5,7 +5,7 @@ class UserFacade
   end
 
   def self.find_existing_user(uid)
-    user = UserService.find_user(uid)
-    binding.pry
+    user_data = UserService.find_user_data(uid)
+    User.new(user_data)
   end
 end

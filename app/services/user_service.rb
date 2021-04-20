@@ -9,7 +9,7 @@ class UserService
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.find_user(uid)
+  def self.find_user_data(uid)
     response = conn.get("/api/v1/users/#{uid}")
 
     json = JSON.parse(response.body, symbolize_names: true)
