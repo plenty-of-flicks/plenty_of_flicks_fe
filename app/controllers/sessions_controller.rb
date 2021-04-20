@@ -1,6 +1,4 @@
 class SessionsController < ApplicationController
-  # before_action :authenticate
-
   def create
     @current_user = UserFacade.find_or_create_user(user_params)
     session[:uid] = @current_user.uid
