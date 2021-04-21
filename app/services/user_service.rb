@@ -1,4 +1,4 @@
-class UserService
+class UserService < PofBeService
   def self.find_or_create_be_user(user_params)
     response = conn.post('/api/v1/users') do |req|
       user_params.each do |key, value|
@@ -23,9 +23,5 @@ class UserService
     end
 
     json = JSON.parse(response.body, symbolize_names: true)
-  end
-
-  def self.conn
-    Faraday.new(url: ENV['POF_BE'])
   end
 end
