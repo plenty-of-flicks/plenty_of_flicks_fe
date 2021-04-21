@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-    @current_user ||= UserFacade.find_existing_user(session[:uid]) if session[:uid]
+    @current_user ||= CurrentUser.new(session[:current_user]) if session[:current_user]
   end
 
   def user_signed_in?
