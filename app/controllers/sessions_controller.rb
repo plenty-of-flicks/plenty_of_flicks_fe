@@ -1,9 +1,9 @@
 class SessionsController < ApplicationController
   def create
-    @current_user = UserFacade.find_or_create_user(user_params)
-    session[:uid] = @current_user.uid
+    user = UserFacade.find_or_create_user(user_params)
+    session[:current_user] = user
 
-    redirect_to root_path, notice: "Welcome, #{@current_user.first_name}!"
+    redirect_to root_path, notice: "Welcome, #{user.first_name}!"
   end
 
   def destroy
