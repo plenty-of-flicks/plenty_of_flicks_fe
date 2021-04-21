@@ -11,7 +11,10 @@
 
   <body>
     <nav class = "topnav">
-
+      <div class=".log-in">
+        <%= link_to 'Log In', google_login_path %>
+        <%= link_to 'Log Out', google_logout_path %>
+      </div>
     </nav>
     <% flash.each do |name, msg| %>
       <div class= "<%=name%>-flash">
