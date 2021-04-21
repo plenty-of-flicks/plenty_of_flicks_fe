@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def authenticate
+    # add flash message here
     redirect_to google_login_path unless user_signed_in?
   end
 
