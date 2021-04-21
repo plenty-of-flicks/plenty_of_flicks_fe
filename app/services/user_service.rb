@@ -9,11 +9,11 @@ class UserService
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.find_user_data(uid)
-    response = conn.get("/api/v1/users/#{uid}")
-
-    json = JSON.parse(response.body, symbolize_names: true)
-  end
+  # def self.find_user_data(uid)
+  #   response = conn.get("/api/v1/users/#{uid}")
+  #
+  #   json = JSON.parse(response.body, symbolize_names: true)
+  # end
 
   def self.update_user(user_params, uid)
     response = conn.patch("/api/v1/users/#{uid}") do |req|
