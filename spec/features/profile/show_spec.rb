@@ -15,10 +15,11 @@ describe 'profile page' do
     expect(page).to have_css("img[src*='https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg']")
   end
 
-  it 'redirects to welcome page if user is not logged in', :vcr do
+  it 'redirects to welcome page if user is not logged in' do
     visit profile_path
 
     expect(current_path).to eq(root_path)
+    expect(page).to have_content("You must be logged in to perform that action. Click 'Log In' to log in or create an account.")
   end
 
   it 'edit profile button redirects to profile edit page', :vcr do
