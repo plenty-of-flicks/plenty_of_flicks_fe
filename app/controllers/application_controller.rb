@@ -3,8 +3,9 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def authenticate
-    # add flash message here
-    redirect_to google_login_path unless user_signed_in?
+    unless user_signed_in?
+      redirect_to root_path, notice: "You must be logged in to perform that action. Click 'Log In' to log in or create an account."
+    end
   end
 
   def current_user
