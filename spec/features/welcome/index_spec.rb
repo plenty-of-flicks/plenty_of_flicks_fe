@@ -52,6 +52,29 @@ describe 'welcome page' do
     end
   end
 
+  it 'logged in user can access discover index page from navbar', :vcr do
+    stub_omniauth
+    visit root_path
+
+    click_link('Log In')
+
+    within '.topnav' do
+      expect(page).to have_link('Find Movies')
+      click_link 'Find Movies'
+    end
+
+    expect(current_path).to eq(discover_index_path)
+  end
+
+  it 'guest user can not see Find Movies link in navbar' do
+    visit root_path
+
+    within '.topnav' do
+      expect(page).not_to have_link('Find Movies')
+    end
+  end
+
+
   def stub_omniauth
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
