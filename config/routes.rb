@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   # user profile
   get '/profile', to: 'profile#show', as: :profile
   get '/profile/edit', to: 'profile#edit', as: :profile_edit
+  patch '/profile', to: 'profile#update', as: :profile_update
 
   # admin routes
   get '/admin/refresh_availability', to: 'admin#refresh_availability', as: :refresh_availability
