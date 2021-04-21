@@ -15,6 +15,16 @@ class UserService
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.update_user(user_params, uid)
+    response = conn.patch("/api/v1/users/#{uid}") do |req|
+      user_params.each do |key, value|
+        req.params[key] = value
+      end
+    end
+
+    json = JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.conn
     Faraday.new(url: ENV['POF_BE'])
   end
