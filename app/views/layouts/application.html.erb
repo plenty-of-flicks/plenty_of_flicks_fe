@@ -11,12 +11,6 @@
 
   <body>
     <nav class = "topnav">
-      <div class="log-in">
-        <%= link_to 'Log In', google_login_path %>
-      </div>
-      <div class="log-in">
-        <%= link_to 'Log Out', google_logout_path %>
-      </div>
       <% if current_user %>
         <div class="profile-link">
           <%= link_to 'Profile', profile_path %>
@@ -24,6 +18,13 @@
         <div class="discover-link">
           <%= link_to 'Find Movies', discover_index_path %>
         </div>
+        <div class="log-out">
+          <%= link_to 'Log Out', google_logout_path %>
+        </div>
+      <% else %>
+      <div class="log-in">
+        <%= link_to 'Log In', google_login_path %>
+      </div>
       <% end %>
     </nav>
     <% flash.each do |name, msg| %>
