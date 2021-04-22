@@ -1,0 +1,102 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2aad8efb-381f-4ac9-a0b2-69c98f861779
+      X-Runtime:
+      - '1.283186'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Thu, 22 Apr 2021 01:41:28 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"774a30f2b9098c660ef94806328441cd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d9d979f3-b293-4c70-b677-ea974faf717c
+      X-Runtime:
+      - '1.410325'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiNDMxMSIsInR5cGUiOiJtb3ZpZSIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJXb21hbiBhdCBXYXIiLCJ0bWRiX2lkIjozNDg2NTcsInBvc3Rlcl9wYXRoIjoiLzlJd1JvTHhiWUYxVnUxS3hIdDBhTGJ5ZVM1dS5qcGciLCJkZXNjcmlwdGlvbiI6IkhhbGxhIGRlY2xhcmVzIGEgb25lLXdvbWFuLXdhciBvbiB0aGUgbG9jYWwgYWx1bWluaXVtIGluZHVzdHJ5LiBTaGUgaXMgcHJlcGFyZWQgdG8gcmlzayBldmVyeXRoaW5nIHRvIHByb3RlY3QgdGhlIHByaXN0aW5lIEljZWxhbmRpYyBIaWdobGFuZHMgc2hlIGxvdmVz4oCmIFVudGlsIGFuIG9ycGhhbiB1bmV4cGVjdGVkbHkgZW50ZXJzIGhlciBsaWZlLiIsImdlbnJlcyI6W3siaWQiOjEsIm5hbWUiOiJUaHJpbGxlciIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA1LjY0MFoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNS42NDBaIiwidG1kYl9pZCI6NTN9LHsiaWQiOjMsIm5hbWUiOiJEcmFtYSIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA1Ljk3OFoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNS45NzhaIiwidG1kYl9pZCI6MTh9LHsiaWQiOjksIm5hbWUiOiJDb21lZHkiLCJjcmVhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNy40NjlaIiwidXBkYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MDcuNDY5WiIsInRtZGJfaWQiOjM1fV0sInZvdGVfYXZlcmFnZSI6Ny4yLCJ2b3RlX2NvdW50IjoyMzksInllYXIiOiIyMDE4In19fQ==
+  recorded_at: Thu, 22 Apr 2021 01:41:30 GMT
+recorded_with: VCR 6.0.0

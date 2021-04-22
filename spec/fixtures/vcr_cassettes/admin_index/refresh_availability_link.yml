@@ -35,17 +35,17 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"4dfd1d28a79345a76a6e37c0f17c4fac"
+      - W/"5c651b7fd0e1a98d6225cb025349473b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f9b69137-3eaa-4a1d-85fd-b55f4130c8ff
+      - ee434c63-f592-4fad-8be8-b241d04b5991
       X-Runtime:
-      - '34.640670'
+      - '4.423174'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"service_refresh","attributes":{"name":"Netflix","movie_count":3390}}}'
-  recorded_at: Wed, 14 Apr 2021 07:07:57 GMT
+      string: '{"data":{"id":null,"type":"service_refresh","attributes":{"name":"Netflix","movie_count":3417}}}'
+  recorded_at: Thu, 22 Apr 2021 03:23:48 GMT
 recorded_with: VCR 6.0.0
