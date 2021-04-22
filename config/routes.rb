@@ -14,7 +14,8 @@ Rails.application.routes.draw do
   patch '/profile', to: 'profile#update', as: :profile_update
 
   # discover routes
-  resources :discover, only: [:index]
+  get '/discover/random', to: 'discover#random', as: :discover_random
+  resources :discover, only: [:index, :show]
 
   # admin routes
   get '/admin/refresh_availability', to: 'admin#refresh_availability', as: :refresh_availability
