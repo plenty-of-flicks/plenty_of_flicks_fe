@@ -5,9 +5,9 @@ class User
               :email,
               :uid,
               :image
-              
+
   def initialize(user_data)
-    @id = user_data[:data][:id]
+    @id = user_data[:data][:id].to_i
     @first_name = user_data[:data][:attributes][:first_name]
     @last_name = user_data[:data][:attributes][:last_name]
     @email = user_data[:data][:attributes][:email]
