@@ -41,6 +41,16 @@ class BackendService
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.create_swipe(swipe_params)
+    response = conn.post("/api/v1/swipes") do |req|
+      swipe_params.each do |key, value|
+        req.params[key] = value
+      end
+    end
+
+    json = JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.conn
     Faraday.new(url: ENV['POF_BE'])
   end
