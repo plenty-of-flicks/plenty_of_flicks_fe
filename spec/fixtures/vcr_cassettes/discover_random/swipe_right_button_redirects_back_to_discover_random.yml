@@ -1,0 +1,212 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a5e0a414-a923-4c45-aa04-41a668f59b71
+      X-Runtime:
+      - '0.034381'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Fri, 23 Apr 2021 08:53:21 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"7bd524ec6671a8dc2cf8b933f5d8b196"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 95fc82fd-a1b0-49ed-b02a-a7b6a4da4ff4
+      X-Runtime:
+      - '0.394956'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10971","type":"movie","attributes":{"title":"In Bed
+        with Victoria","tmdb_id":377275,"poster_path":"/fEt9U7JQYO8j8VtCCuyDzznPM2x.jpg","description":"Victoria
+        is a thirty-something divorced lawyer who''s struggling to raise her two daughters.
+        She is canny and cynical but on the verge of an emotional breakdown. At a
+        friend''s wedding she reconnects with Vincent, an old friend, and Sam, an
+        old client. Her life is about to take a new turn.","genres":[{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35},{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":5,"name":"Romance","created_at":"2021-04-17T04:01:06.641Z","updated_at":"2021-04-17T04:01:06.641Z","tmdb_id":10749}],"vote_average":5.7,"vote_count":299,"year":"2016"}}}'
+  recorded_at: Fri, 23 Apr 2021 08:53:21 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=10971&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"f97c9a4f5d7f99368fdab0b4b80322c7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aaf6dae7-6a31-478f-bc08-ff2f70d7c353
+      X-Runtime:
+      - '0.016250'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"swipe","attributes":{"id":4,"user_id":1,"movie_id":10971,"rating":1}}}'
+  recorded_at: Fri, 23 Apr 2021 08:53:21 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"a1062e3729cbb75cee5519146ee01267"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f2495d99-175c-4788-b72b-09f54204dcc4
+      X-Runtime:
+      - '0.404840'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"12035","type":"movie","attributes":{"title":"Xchange","tmdb_id":26446,"poster_path":"/hAkfDE6gYBDxDvVbnkTd6jXv9iy.jpg","description":"In
+        the near future, a company called Xchange owns a mind transference technology
+        that enables instantaneous travel by swapping bodies with someone at the destination.
+        A member of the privileged corporate class (\"Corpie\") Xchanging for the
+        first time unwittingly switches bodies with a terrorist. Forced to hide in
+        a limited life span cloned body with just 2 days remaining, he races against
+        time to stop the terrorist and regain his body.","genres":[{"id":18,"name":"TV
+        Movie","created_at":"2021-04-17T04:01:28.545Z","updated_at":"2021-04-17T04:01:28.545Z","tmdb_id":10770},{"id":8,"name":"Science
+        Fiction","created_at":"2021-04-17T04:01:07.191Z","updated_at":"2021-04-17T04:01:07.191Z","tmdb_id":878}],"vote_average":5.7,"vote_count":35,"year":"2001"}}}'
+  recorded_at: Fri, 23 Apr 2021 08:53:22 GMT
+recorded_with: VCR 6.0.0

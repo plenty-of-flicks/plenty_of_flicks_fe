@@ -15,6 +15,20 @@ describe 'discover random' do
     expect(current_path).to eq(discover_random_path)
   end
 
+  it 'swipe right button redirects back to discover random', :vcr do
+    stub_omniauth
+
+    visit google_login_path
+
+    visit discover_random_path
+
+    within '.swipe-right-link' do
+      click_link
+    end
+
+    expect(current_path).to eq(discover_random_path)
+  end
+
   def stub_omniauth
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
