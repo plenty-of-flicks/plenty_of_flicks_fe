@@ -35,6 +35,34 @@ describe 'discover index' do
     end
   end
 
+  it 'home link in navbar redirects to root_path for logged in user', :vcr do
+    stub_omniauth
+
+    visit google_login_path
+
+    visit discover_index_path
+
+    within '.topnav' do
+      within '.home-link' do
+        click_link
+      end
+    end
+
+    expect(current_path).to eq(root_path)
+  end
+
+  it 'home link in navbar redirects to root_path for guest' do
+    visit discover_index_path
+    
+    within '.topnav' do
+      within '.home-link' do
+        click_link
+      end
+    end
+
+    expect(current_path).to eq(root_path)
+  end
+
   def stub_omniauth
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
