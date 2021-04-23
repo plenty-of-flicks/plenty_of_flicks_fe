@@ -1,14 +1,16 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: "<POF_BE>/api/v1/services/update_availability?service=netflix"
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=4193&rating=0&user_id=1"
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       User-Agent:
       - Faraday v1.3.0
+      Content-Length:
+      - '0'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -35,17 +37,17 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"5c651b7fd0e1a98d6225cb025349473b"
+      - W/"97075d945edb3ba6db9e65f49fc46bd2"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ee434c63-f592-4fad-8be8-b241d04b5991
+      - 81ca7a77-de9b-4b9c-9533-dd3ee56e68af
       X-Runtime:
-      - '4.423174'
+      - '0.022571'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":null,"type":"service_refresh","attributes":{"name":"Netflix","movie_count":3417}}}'
-  recorded_at: Thu, 22 Apr 2021 03:23:48 GMT
+      string: '{"data":{"id":"5","type":"swipe","attributes":{"id":5,"user_id":1,"movie_id":4193,"rating":0}}}'
+  recorded_at: Fri, 23 Apr 2021 08:58:22 GMT
 recorded_with: VCR 6.0.0

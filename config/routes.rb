@@ -8,10 +8,15 @@ Rails.application.routes.draw do
   get 'auth/google_oauth2', as: :google_login
   get '/logout', to: 'sessions#destroy', as: :google_logout
 
-  # user profile
+  # user profile routes
   get '/profile', to: 'profile#show', as: :profile
   get '/profile/edit', to: 'profile#edit', as: :profile_edit
   patch '/profile', to: 'profile#update', as: :profile_update
+
+  # discover routes
+  get '/discover/random', to: 'discover#random', as: :discover_random
+  get '/discover/swipe', to: 'discover#swipe', as: :swipe
+  resources :discover, only: [:index, :show]
 
   # admin routes
   get '/admin/refresh_availability', to: 'admin#refresh_availability', as: :refresh_availability

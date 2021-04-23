@@ -10,7 +10,8 @@ class ProfileController < ApplicationController
   end
 
   def update
-    @current_user = UserFacade.update_existing_user(user_params, session[:uid])
+    uid = current_user.uid
+    session[:current_user] = UserFacade.update_existing_user(user_params, uid)
 
     redirect_to profile_path, notice: 'Your profile information has been updated.'
   end
