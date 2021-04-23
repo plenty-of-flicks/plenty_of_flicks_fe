@@ -41,15 +41,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2aad8efb-381f-4ac9-a0b2-69c98f861779
+      - 2e819773-f70b-459a-82be-1254e5ed96c2
       X-Runtime:
-      - '1.283186'
+      - '0.032352'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Thu, 22 Apr 2021 01:41:28 GMT
+  recorded_at: Fri, 23 Apr 2021 08:21:18 GMT
 - request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
@@ -85,18 +85,20 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"774a30f2b9098c660ef94806328441cd"
+      - W/"0ed1f0bb1d3d6156763a553491bcfaa8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d9d979f3-b293-4c70-b677-ea974faf717c
+      - 1f905c70-d291-4198-bc2c-31f28de447bc
       X-Runtime:
-      - '1.410325'
+      - '0.357235'
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjp7ImlkIjoiNDMxMSIsInR5cGUiOiJtb3ZpZSIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJXb21hbiBhdCBXYXIiLCJ0bWRiX2lkIjozNDg2NTcsInBvc3Rlcl9wYXRoIjoiLzlJd1JvTHhiWUYxVnUxS3hIdDBhTGJ5ZVM1dS5qcGciLCJkZXNjcmlwdGlvbiI6IkhhbGxhIGRlY2xhcmVzIGEgb25lLXdvbWFuLXdhciBvbiB0aGUgbG9jYWwgYWx1bWluaXVtIGluZHVzdHJ5LiBTaGUgaXMgcHJlcGFyZWQgdG8gcmlzayBldmVyeXRoaW5nIHRvIHByb3RlY3QgdGhlIHByaXN0aW5lIEljZWxhbmRpYyBIaWdobGFuZHMgc2hlIGxvdmVz4oCmIFVudGlsIGFuIG9ycGhhbiB1bmV4cGVjdGVkbHkgZW50ZXJzIGhlciBsaWZlLiIsImdlbnJlcyI6W3siaWQiOjEsIm5hbWUiOiJUaHJpbGxlciIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA1LjY0MFoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNS42NDBaIiwidG1kYl9pZCI6NTN9LHsiaWQiOjMsIm5hbWUiOiJEcmFtYSIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA1Ljk3OFoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNS45NzhaIiwidG1kYl9pZCI6MTh9LHsiaWQiOjksIm5hbWUiOiJDb21lZHkiLCJjcmVhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNy40NjlaIiwidXBkYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MDcuNDY5WiIsInRtZGJfaWQiOjM1fV0sInZvdGVfYXZlcmFnZSI6Ny4yLCJ2b3RlX2NvdW50IjoyMzksInllYXIiOiIyMDE4In19fQ==
-  recorded_at: Thu, 22 Apr 2021 01:41:30 GMT
+      encoding: UTF-8
+      string: '{"data":{"id":"3669","type":"movie","attributes":{"title":"Beneath
+        the Darkness","tmdb_id":78461,"poster_path":"/it9CCP7OOsZDgsJtobwcbVM1bO5.jpg","description":"After
+        watching their best friend get murdered, a group of teens struggle to expose
+        a local hero as the vicious killer and keep from becoming his next victims.","genres":[{"id":1,"name":"Thriller","created_at":"2021-04-17T04:01:05.640Z","updated_at":"2021-04-17T04:01:05.640Z","tmdb_id":53}],"vote_average":4.8,"vote_count":103,"year":"2012"}}}'
+  recorded_at: Fri, 23 Apr 2021 08:21:19 GMT
 recorded_with: VCR 6.0.0
