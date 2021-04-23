@@ -1,5 +1,8 @@
-<h1>Find Movies</h1>
+<div class="discover-marquee">
+  <%= image_tag('discover_link.png', height: 150) %>
+</div>
 
-<h4>Let's find you some movies to watch! Fill out the form below, and click submit to filter out the movies we suggest. Or, click 'No Filters' to start swiping random available movies.</h4>
-
-<%= button_to 'No Filters', discover_random_path, method: :get %>
+<div class="discover-description">
+  <h4>Let's find you some movies to watch! Fill out the form below, and click submit to filter out the movies we suggest. Or, click 'No Filters' to start swiping random available movies.</h4>
+  <%= button_to 'No Filters', discover_random_path, method: :get %>
+</div>

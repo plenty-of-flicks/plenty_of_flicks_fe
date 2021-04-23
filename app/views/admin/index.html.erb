@@ -1,13 +1,21 @@
-<h1>Admin Portal</h1>
+<div class="admin-marquee">
+  <%= image_tag('admin_link.png', height: 150) %>
+</div>
 
-<%= form_with(url: refresh_availability_path, method: :get) do |f| %>
-  <h3><%= f.label('Service Name') %></h3>
-  <p id='netflix-radio'><%= f.radio_button :service, 'netflix' %>Netflix</p>
-  <p id='hulu-radio'><%= f.radio_button :service, 'hulu' %>Hulu</p>
-  <p id='amazon-radio'><%= f.radio_button :service, 'amazon' %>Amazon Prime Video</p>
+<div class="admin-form">
+  <h3>Service Refresh Form</h3>
+  <p>Services constantly change what movies they offer.<br>Select a service and click 'Refresh Availability' to update a service's movie availabilities</p>
+  <%= form_with(url: refresh_availability_path, method: :get) do |f| %>
+    <div id='netflix-radio'><%= f.radio_button :service, 'netflix' %>Netflix</div>
+    <div id='hulu-radio'><%= f.radio_button :service, 'hulu' %>Hulu</div>
+    <div id='amazon-radio'><%= f.radio_button :service, 'amazon' %>Amazon Prime Video</div><br>
 
-  <%= submit_tag("Refresh Availability") %>
-<% end %>
-<br>
-<br>
-<%= button_to 'Update Movie Details', '/admin/update_movie_details', method: :get %>
+    <%= submit_tag("Refresh Availability") %>
+  <% end %>
+</div>
+
+<div class="admin-form">
+  <h3>Update Movie Details</h3>
+  <p>After submitting the 'Service Refresh Form' above, use this button to fully populate all newly added movies with relevant information.</p>
+  <%= button_to 'Update Movie Details', '/admin/update_movie_details', method: :get %>
+</div>
