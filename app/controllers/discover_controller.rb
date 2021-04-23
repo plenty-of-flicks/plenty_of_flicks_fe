@@ -11,7 +11,7 @@ class DiscoverController < ApplicationController
 
   def random
     @movie = DiscoverFacade.find_random_movie(current_user.id)
-    @params = {random: true}
+    @filter = {random: true}
 
     render :show
   end
