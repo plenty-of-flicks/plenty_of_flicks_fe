@@ -35,7 +35,7 @@
 </section>
 
 <section class="swipe-left-link">
-  <%= link_to image_tag('no_icon.png', size:100, class: 'swipe-link'), root_path %>
+  <%= link_to image_tag('no_icon.png', size:100, class: 'swipe-link'), swipes_path(@filter.merge(movie_id: @movie.id, rating: 0)), method: :post %>
 </section>
 
 <section class="swipe-right-link">
