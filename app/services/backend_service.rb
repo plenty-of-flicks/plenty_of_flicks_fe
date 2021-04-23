@@ -41,8 +41,6 @@ class BackendService
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
-  private
-
   def self.conn
     Faraday.new(url: ENV['POF_BE'])
   end
