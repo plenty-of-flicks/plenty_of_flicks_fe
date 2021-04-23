@@ -1,8 +1,12 @@
-<h1>Profile Page</h1>
+<div class="profile-marquee">
+  <%= image_tag('profile_link.png', height: 150) %>
+</div>
 
-<h3>First Name: <%= current_user.first_name %></h3>
-<h3>Last Name: <%= current_user.last_name %></h3>
-<h3>Email: <%= current_user.email %></h3>
-<h3>User Image: <%= image_tag(current_user.image) %></h3>
+<div class="profile-info">
+  <h3>First Name: <%= current_user.first_name %></h3>
+  <h3>Last Name: <%= current_user.last_name %></h3>
+  <h3>Email: <%= current_user.email %></h3>
+  <h3>User Image: <%= image_tag(current_user.image) %></h3>
 
-<%= button_to 'Edit Profile', profile_edit_path, method: :get %>
+  <%= button_to 'Edit Profile', profile_edit_path, method: :get %>
+</div>

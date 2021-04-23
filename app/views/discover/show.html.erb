@@ -1,43 +1,50 @@
-<section class="movie-title">
-  <h1><%= @movie.title %>(<%= @movie.year %>)</h1>
-</section>
+<div class="discover-marquee">
+  <%= image_tag('discover_link.png', height: 150) %>
+</div>
 
-<section class="movie-genre">
-  <% if @movie.genres %>
-    <h3>
-      Genres:
-      <% @movie.genres.each do |genre| %>
-        <%= genre %><%= ', ' unless genre == @movie.genres.last %>
+<div class="movie-info">
+  <div class="movie-title">
+    <h1><%= @movie.title %> (<%= @movie.year %>)</h1>
+  </div>
+
+  <div class="movie-genre">
+    <% if @movie.genres %>
+      <h3>
+        Genres:
+        <% @movie.genres.each do |genre| %>
+          <%= genre %><%= ', ' unless genre == @movie.genres.last %>
+        <% end %>
+      </h3>
+    <% end %>
+  </div>
+
+  <div class="movie-rating">
+    <h4>
+      Rating:
+      <% if @movie.vote_average %>
+        <%= @movie.vote_average %>/10
+      <% else %>
+        --/10
+      <% end %><br>
+      <% if @movie.vote_count %>
+        <%= @movie.vote_count %>
+      <% else %>
+        0
       <% end %>
-    </h3>
-  <% end %>
-</section>
+      Total Votes</h4>
+  </div>
 
-<section class="movie-rating">
-  <h3>
-    Rating:
-    <% if @movie.vote_average %>
-      <%= @movie.vote_average %>
-    <% else %>
-      --
-    <% end %>
-    /10
-    <% if @movie.vote_count %>
-      <%= @movie.vote_count %>
-    <% else %>
-      0
-    <% end %>
-    Total Votes</h3>
-</section>
+  <div class="movie-description">
+    <h4>Description: <%= @movie.description %></h4>
+  </div>
+</div>
 
-<section class="movie-description">
-  <h4>Description: <%= @movie.description %></h4>
-</section>
+<div class="swipe-links">
+  <div class="swipe-left-link">
+    <%= link_to image_tag('pof_no_icon.png', size:100, class: 'swipe-link'), swipe_path(@filter.merge(movie_id: @movie.id, rating: 0)) %>
+  </div>
 
-<section class="swipe-left-link">
-  <%= link_to image_tag('no_icon.png', size:100, class: 'swipe-link'), swipe_path(@filter.merge(movie_id: @movie.id, rating: 0)) %>
-</section>
-
-<section class="swipe-right-link">
-  <%= link_to image_tag('yes_icon.png', size:100, class: 'swipe-link'), swipe_path(@filter.merge(movie_id: @movie.id, rating: 1)) %>
-</section>
+  <div class="swipe-right-link">
+    <%= link_to image_tag('pof_yes_icon.png', size:100, class: 'swipe-link'), swipe_path(@filter.merge(movie_id: @movie.id, rating: 1)) %>
+  </div>
+</div>

@@ -13,3 +13,139 @@
  *= require_tree .
  *= require_self
  */
+
+/* site-wide styling */
+body {
+  background: #393536;
+  background-image: url(/assets/plenty_of_flicks_logo.png);
+}
+
+/* navbar styling */
+.topnav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+/* flash message styling */
+.flash-messages {
+  background: #C4C4C4;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  margin: 20px;
+  border-radius: 40px;
+  box-shadow: 1.5px 4px #363631;
+}
+
+/* welcome page styling */
+.pof-marquee {
+  text-align: center;
+  margin: 20px;
+}
+
+.app-description {
+  background: #C4C4C4;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  margin: 20px;
+  border-radius: 40px;
+  box-shadow: 1.5px 4px #363631;
+}
+
+/* profile show styling */
+.profile-marquee {
+  text-align: center;
+  margin: 20px;
+}
+
+.profile-info {
+  background: #C4C4C4;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  margin: 20px;
+  border-radius: 40px;
+  box-shadow: 1.5px 4px #363631;
+}
+
+/* profile edit page */
+.profile-edit-form {
+  background: #C4C4C4;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  margin: 20px;
+  border-radius: 40px;
+  box-shadow: 1.5px 4px #363631;
+}
+
+/* discover index page */
+.discover-marquee {
+  text-align: center;
+  margin: 20px;
+}
+
+.discover-description {
+  background: #C4C4C4;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  margin: 20px;
+  border-radius: 40px;
+  box-shadow: 1.5px 4px #363631;
+}
+
+/* discover show page */
+.movie-info {
+  background: #C4C4C4;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  margin: 20px;
+  border-radius: 40px;
+  box-shadow: 1.5px 4px #363631;
+}
+
+.swipe-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+/* admin index page */
+.admin-marquee {
+  text-align: center;
+  margin: 20px;
+}
+
+.admin-form {
+  background: #C4C4C4;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  margin: 20px;
+  border-radius: 40px;
+  box-shadow: 1.5px 4px #363631;
+}

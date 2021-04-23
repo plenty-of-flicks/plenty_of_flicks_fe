@@ -1,4 +1,22 @@
-<h1>Plenty of Flicks</h1>
-<div class="logo">
-  <%= image_tag('plenty_of_flicks_logo', size: "100") %>
+<div class="pof-marquee">
+  <%= image_tag('pof_marquee.png', height: 250) %>
+</div>
+
+<div class="app-description">
+  <p>We all know the struggle.</p>
+  <p>
+    You sit down to watch a movie with a group of friends or significant other, and spend more time picking out a suitable flick than actually watching the movie.
+  </p>
+  <h3>Enter PoF.</h3>
+  <p>
+    <% if current_user %>
+      Log in with google
+    <% else %>
+      <%= link_to 'Log in with google', google_login_path %>
+    <% end %>
+    and click <%= link_to 'Discover', discover_index_path %> to swipe through available movies, and build a collection of flicks you want to watch.
+  </p>
+  <p>
+    When it's time to watch with friends, create a party, and we'll tell you which movies you ALL want to watch.
+  </p>
 </div>
