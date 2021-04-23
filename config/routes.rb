@@ -15,13 +15,11 @@ Rails.application.routes.draw do
 
   # discover routes
   get '/discover/random', to: 'discover#random', as: :discover_random
+  get '/discover/swipe', to: 'discover#swipe', as: :swipe
   resources :discover, only: [:index, :show]
 
   # admin routes
   get '/admin/refresh_availability', to: 'admin#refresh_availability', as: :refresh_availability
   get '/admin/update_movie_details', to: 'admin#update_movie_details', as: :update_details
   resources :admin, only: [:index]
-
-  # swipes random
-  resources :swipes, only: [:create]
 end

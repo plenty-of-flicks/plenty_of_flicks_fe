@@ -35,9 +35,9 @@
 </section>
 
 <section class="swipe-left-link">
-  <%= link_to image_tag('no_icon.png', size:100, class: 'swipe-link'), swipes_path(@filter.merge(movie_id: @movie.id, rating: 0)), method: :post %>
+  <%= link_to image_tag('no_icon.png', size:100, class: 'swipe-link'), swipe_path(@filter.merge(movie_id: @movie.id, rating: 0)) %>
 </section>
 
 <section class="swipe-right-link">
-  <%= link_to image_tag('yes_icon.png', size:100, class: 'swipe-link'), swipes_path(@filter.merge(movie_id: @movie.id, rating: 1)), method: :post %>
+  <%= link_to image_tag('yes_icon.png', size:100, class: 'swipe-link'), swipe_path(@filter.merge(movie_id: @movie.id, rating: 1)) %>
 </section>
