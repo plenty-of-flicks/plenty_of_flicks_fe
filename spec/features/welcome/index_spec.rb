@@ -11,7 +11,9 @@ describe 'welcome page' do
     stub_omniauth
     visit root_path
     expect(page).to have_link('Log In')
-    click_link('Log In')
+    within '.log-in' do
+      click_link
+    end
 
     expect(current_path).to eq(root_path)
     expect(page).to have_content('Welcome, Nick!')
@@ -21,7 +23,9 @@ describe 'welcome page' do
     stub_omniauth
     visit root_path
 
-    click_link('Log In')
+    within '.log-in' do
+      click_link
+    end
 
     expect(page).to have_link('Log Out')
     click_link('Log Out')
@@ -34,7 +38,9 @@ describe 'welcome page' do
     stub_omniauth
     visit root_path
 
-    click_link('Log In')
+    within '.log-in' do
+      click_link
+    end
 
     within '.topnav' do
       expect(page).to have_link('Profile')
@@ -56,7 +62,9 @@ describe 'welcome page' do
     stub_omniauth
     visit root_path
 
-    click_link('Log In')
+    within '.log-in' do
+      click_link
+    end
 
     within '.topnav' do
       expect(page).to have_link('Find Movies')
