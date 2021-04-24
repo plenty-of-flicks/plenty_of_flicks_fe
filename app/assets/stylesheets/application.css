@@ -32,7 +32,7 @@ body {
 
 /* flash message styling */
 .flash-messages {
-  background: #C4C4C4;
+  background: #FFEA93;
   margin: 10px;
   padding: 10px;
   border: 2px solid black;
@@ -50,7 +50,7 @@ body {
 }
 
 .app-description {
-  background: #C4C4C4;
+  background: #FFEA93;
   margin: 10px;
   padding: 10px;
   border: 2px solid black;
@@ -68,7 +68,7 @@ body {
 }
 
 .profile-info {
-  background: #C4C4C4;
+  background: #FFEA93;
   margin: 10px;
   padding: 10px;
   border: 2px solid black;
@@ -81,7 +81,7 @@ body {
 
 /* profile edit page */
 .profile-edit-form {
-  background: #C4C4C4;
+  background: #FFEA93;
   margin: 10px;
   padding: 10px;
   border: 2px solid black;
@@ -99,7 +99,7 @@ body {
 }
 
 .discover-description {
-  background: #C4C4C4;
+  background: #FFEA93;
   margin: 10px;
   padding: 10px;
   border: 2px solid black;
@@ -112,7 +112,7 @@ body {
 
 /* discover show page */
 .movie-info {
-  background: #C4C4C4;
+  background: #FFEA93;
   margin: 10px;
   padding: 10px;
   border: 2px solid black;
@@ -139,7 +139,7 @@ body {
 }
 
 .admin-form {
-  background: #C4C4C4;
+  background: #FFEA93;
   margin: 10px;
   padding: 10px;
   border: 2px solid black;

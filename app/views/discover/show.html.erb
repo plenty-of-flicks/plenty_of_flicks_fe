@@ -1,5 +1,5 @@
 <div class="discover-marquee">
-  <%= image_tag('discover_link.png', height: 150) %>
+  <%= image_tag('pof_discover_link.png', height: 150) %>
 </div>
 
 <div class="movie-info">
@@ -41,10 +41,10 @@
 
 <div class="swipe-links">
   <div class="swipe-left-link">
-    <%= link_to image_tag('pof_no_icon.png', size:100, class: 'swipe-link'), swipe_path(@filter.merge(movie_id: @movie.id, rating: 0)) %>
+    <%= link_to image_tag('no_icon.png', size:200, class: 'swipe-link'), swipe_path(@filter.merge(movie_id: @movie.id, rating: 0)) %>
   </div>
 
   <div class="swipe-right-link">
-    <%= link_to image_tag('pof_yes_icon.png', size:100, class: 'swipe-link'), swipe_path(@filter.merge(movie_id: @movie.id, rating: 1)) %>
+    <%= link_to image_tag('yes_icon.png', size:200, class: 'swipe-link'), swipe_path(@filter.merge(movie_id: @movie.id, rating: 1)) %>
   </div>
 </div>
