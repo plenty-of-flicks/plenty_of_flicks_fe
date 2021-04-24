@@ -4,13 +4,15 @@ describe 'welcome page' do
   it 'has content' do
     visit root_path
 
-    expect(page).to have_content('Plenty of Flicks')
+    expect(page).to have_content('We all know the struggle.')
   end
 
   it 'user can log in', :vcr do
     stub_omniauth
     visit root_path
-    expect(page).to have_link('Log In')
+    within'.log-in' do
+      expect(page).to have_link
+    end
     within '.log-in' do
       click_link
     end
@@ -27,8 +29,10 @@ describe 'welcome page' do
       click_link
     end
 
-    expect(page).to have_link('Log Out')
-    click_link('Log Out')
+    within '.log-out' do
+      expect(page).to have_link
+      click_link
+    end
 
     expect(current_path).to eq(root_path)
     expect(page).to have_content('You are now logged out.')
@@ -43,8 +47,10 @@ describe 'welcome page' do
     end
 
     within '.topnav' do
-      expect(page).to have_link('Profile')
-      click_link 'Profile'
+      within '.profile-link' do
+        expect(page).to have_link
+        click_link
+      end
     end
 
     expect(current_path).to eq(profile_path)
@@ -67,8 +73,10 @@ describe 'welcome page' do
     end
 
     within '.topnav' do
-      expect(page).to have_link('Find Movies')
-      click_link 'Find Movies'
+      within '.discover-link' do
+        expect(page).to have_link
+        click_link
+      end
     end
 
     expect(current_path).to eq(discover_index_path)
