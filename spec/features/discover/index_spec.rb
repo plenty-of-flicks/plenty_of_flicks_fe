@@ -18,7 +18,7 @@ describe 'discover index' do
     click_button 'No Filters'
 
     expect(current_path).to eq(discover_random_path)
-    within '.movie-genre' do
+    within '.movie-genres' do
       expect(page).to have_content('Genres:')
     end
     within '.movie-rating' do
@@ -53,7 +53,7 @@ describe 'discover index' do
 
   it 'home link in navbar redirects to root_path for guest' do
     visit discover_index_path
-    
+
     within '.topnav' do
       within '.home-link' do
         click_link
