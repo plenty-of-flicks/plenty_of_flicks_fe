@@ -5,7 +5,9 @@ describe 'profile page' do
     stub_omniauth
 
     visit root_path
-    click_link('Log In')
+    within '.log-in' do
+      click_link
+    end
     visit profile_path
 
     expect(page).to have_content('First Name: Nick')
@@ -26,7 +28,9 @@ describe 'profile page' do
     stub_omniauth
 
     visit root_path
-    click_link('Log In')
+    within '.log-in' do
+      click_link
+    end
     visit profile_path
 
     expect(page).to have_button('Edit Profile')

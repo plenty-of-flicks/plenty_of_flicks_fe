@@ -111,16 +111,60 @@ body {
 }
 
 /* discover show page */
-.movie-info {
+.movie-display {
   background: #FFEA93;
   margin: 10px;
   padding: 10px;
-  border: 2px solid black;
-  opacity: 92%;
+  border: 5px solid black;
+  /* opacity: 92%; */
   text-align: center;
   margin: 20px;
-  border-radius: 40px;
-  box-shadow: 1.5px 4px #363631;
+}
+.movie-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.movie-poster {
+  margin: 20px;
+}
+
+.movie-details {
+  border: 3px solid black;
+  background: white;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.movie-genres {
+  /* border: 3px solid black;
+  background: #FFEA93;
+  padding: 5px;
+  margin: 5px; */
+}
+
+.movie-rating {
+  /* border: 3px solid black;
+  background: #FFEA93;
+  padding: 5px;
+  margin: 5px; */
+}
+
+.movie-description {
+  /* border: 3px solid black;
+  background: #FFEA93;
+  padding: 5px;
+  margin: 5px; */
 }
 
 .swipe-links {

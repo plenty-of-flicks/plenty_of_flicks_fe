@@ -5,7 +5,9 @@ describe 'profile edit page' do
     stub_omniauth
 
     visit root_path
-    click_link('Log In')
+    within '.log-in' do
+      click_link
+    end
     visit profile_edit_path
 
     fill_in :first_name, with: 'Fake'
