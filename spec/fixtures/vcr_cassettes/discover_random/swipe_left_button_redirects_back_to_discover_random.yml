@@ -2,107 +2,6 @@
 http_interactions:
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 430d0c82-e827-4428-be68-f32051ab5e17
-      X-Runtime:
-      - '0.119370'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Fri, 23 Apr 2021 08:47:45 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"3a661bdcb643c8900e321add9cdf3751"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 6271b74b-1013-41ed-8714-043a1e579be3
-      X-Runtime:
-      - '0.720842'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"4193","type":"movie","attributes":{"title":"Dear Comrades!","tmdb_id":587609,"poster_path":"/ds7T5PEplJQeKzpLWbIvW9xpHX1.jpg","description":"When
-        the communist government raises food prices in 1962, the rebellious workers
-        from the small industrial town of Novocherkassk go on strike. The massacre
-        which then ensues is seen through the eyes of a devout party activist.","genres":[{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":6,"name":"History","created_at":"2021-04-17T04:01:06.918Z","updated_at":"2021-04-17T04:01:06.918Z","tmdb_id":36}],"vote_average":7.3,"vote_count":25,"year":"2020"}}}'
-  recorded_at: Fri, 23 Apr 2021 08:47:46 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=4193&rating=0&user_id=1"
     body:
       encoding: UTF-8
@@ -152,6 +51,156 @@ http_interactions:
       string: '{"data":{"id":"3","type":"swipe","attributes":{"id":3,"user_id":1,"movie_id":4193,"rating":0}}}'
   recorded_at: Fri, 23 Apr 2021 08:47:46 GMT
 - request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=3654&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"ecb997c9aecceaac80ead12beb543944"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 85380451-3cea-4935-be74-39d31de5995d
+      X-Runtime:
+      - '0.031823'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"25","type":"swipe","attributes":{"id":25,"user_id":1,"movie_id":3654,"rating":0}}}'
+  recorded_at: Tue, 04 May 2021 02:03:15 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=4583&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e10b984c8b083de432a03db1dc1c280f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9731e0ce-c159-4501-aaa4-5a7a5e878b86
+      X-Runtime:
+      - '0.009352'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"28","type":"swipe","attributes":{"id":28,"user_id":1,"movie_id":4583,"rating":0}}}'
+  recorded_at: Tue, 04 May 2021 02:04:42 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6f1229c8-5be1-4c62-ad97-2f06b3644ca6
+      X-Runtime:
+      - '0.073718'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Wed, 05 May 2021 06:31:10 GMT
+- request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
     body:
@@ -186,18 +235,122 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"babd0d035dc086a98f72e51898e59ed3"
+      - W/"fbed6b0d80578a982fcd7f3dd17d0af4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 900580f1-5842-4837-a277-1152d86505c9
+      - 133214fc-aa5d-4699-8dc1-e7540f4aec7f
       X-Runtime:
-      - '0.689313'
+      - '2.393030'
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjp7ImlkIjoiMTMwNDIiLCJ0eXBlIjoibW92aWUiLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiRW1tZXQgT3R0ZXIncyBKdWcgQmFuZCBDaHJpc3RtYXMiLCJ0bWRiX2lkIjo1NjU3MSwicG9zdGVyX3BhdGgiOm51bGwsImRlc2NyaXB0aW9uIjoiRm9sbG93IHRoZXNlIGJ1bm55IHNpYmxpbmdzIGFuZCB0aGVpciB0YWtlIG9uIHBvcHVsYXIgZmFpcnl0YWxlcyBpbiBNYXggXHUwMDI2YW1wOyBSdWJ5OiBCdW5ueVRhbGVzLiBJbiBzdWNoIGVwaXNvZGVzIGFzIEVtcGVyb3LigJlzIE1heOKAmXMgTmV3IFN1aXQsIFJ1YnnigJlzIFJlYWwgQ2luZGVyZWxsYSwgYW5kIE1heCBhbmQgdGhlIFRocmVlIExpdHRsZSBCdW5uaWVzLCBNYXggaXMgc3RpbGwgdXAgdG8gaGlzIHVzdWFsIGFudGljcyBhcyBSdWJ5IHRyaWVzIHRvIG1haW50YWluIG9yZGVyIGFuZCBmb2xsb3cgdGhlIHJ1bGVzLiIsImdlbnJlcyI6W3siaWQiOjE1LCJuYW1lIjoiQW5pbWF0aW9uIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MTYuMTQzWiIsInVwZGF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjE2LjE0M1oiLCJ0bWRiX2lkIjoxNn0seyJpZCI6MTYsIm5hbWUiOiJGYW1pbHkiLCJjcmVhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMToxOC4zOTJaIiwidXBkYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MTguMzkyWiIsInRtZGJfaWQiOjEwNzUxfV0sInZvdGVfYXZlcmFnZSI6MC4wLCJ2b3RlX2NvdW50IjowLCJ5ZWFyIjoiMjAxMSJ9fX0=
-  recorded_at: Fri, 23 Apr 2021 08:47:46 GMT
+      encoding: UTF-8
+      string: '{"data":{"id":"1330","type":"movie","attributes":{"title":"Singularity","tmdb_id":484886,"poster_path":"/qmAq1fsprWHhFARdpPz0A46ylUS.jpg","description":"When
+        Elias van Dorne, CEO of the world''s largest robotics company, introduces
+        his most powerful invention, Kronos-a super-computer designed to end all wars-it
+        determines that humans are the biggest threat and launches a worldwide attack
+        on mankind. A small band of survivors must form an unlikely alliance to survive
+        the greatest artificial intelligence threat man will ever know.","genres":[{"id":8,"name":"Science
+        Fiction","created_at":"2021-04-17T04:01:07.191Z","updated_at":"2021-04-17T04:01:07.191Z","tmdb_id":878}],"vote_average":3.6,"vote_count":140,"year":"2017"}}}'
+  recorded_at: Wed, 05 May 2021 06:31:12 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=1330&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"9fda56b83cb798c6d6c091e2a407906d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e8a5e6e6-5263-4869-9e4b-71fd26f00733
+      X-Runtime:
+      - '0.044660'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"30","type":"swipe","attributes":{"id":30,"user_id":1,"movie_id":1330,"rating":0}}}'
+  recorded_at: Wed, 05 May 2021 06:31:12 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"3cb4a0d6ee111e0b98f8a8affb5a9bbc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f12c8e83-7422-4d72-b71e-cce4d20a9a35
+      X-Runtime:
+      - '0.945709'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4945","type":"movie","attributes":{"title":"Burn Notice","tmdb_id":2919,"poster_path":null,"description":"No
+        description available","genres":[],"vote_average":null,"vote_count":null,"year":"Unknown"}}}'
+  recorded_at: Wed, 05 May 2021 06:31:13 GMT
 recorded_with: VCR 6.0.0

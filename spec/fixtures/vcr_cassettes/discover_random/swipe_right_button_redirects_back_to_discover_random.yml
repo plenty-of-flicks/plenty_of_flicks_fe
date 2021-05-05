@@ -2,109 +2,6 @@
 http_interactions:
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - a5e0a414-a923-4c45-aa04-41a668f59b71
-      X-Runtime:
-      - '0.034381'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Fri, 23 Apr 2021 08:53:21 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"7bd524ec6671a8dc2cf8b933f5d8b196"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 95fc82fd-a1b0-49ed-b02a-a7b6a4da4ff4
-      X-Runtime:
-      - '0.394956'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10971","type":"movie","attributes":{"title":"In Bed
-        with Victoria","tmdb_id":377275,"poster_path":"/fEt9U7JQYO8j8VtCCuyDzznPM2x.jpg","description":"Victoria
-        is a thirty-something divorced lawyer who''s struggling to raise her two daughters.
-        She is canny and cynical but on the verge of an emotional breakdown. At a
-        friend''s wedding she reconnects with Vincent, an old friend, and Sam, an
-        old client. Her life is about to take a new turn.","genres":[{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35},{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":5,"name":"Romance","created_at":"2021-04-17T04:01:06.641Z","updated_at":"2021-04-17T04:01:06.641Z","tmdb_id":10749}],"vote_average":5.7,"vote_count":299,"year":"2016"}}}'
-  recorded_at: Fri, 23 Apr 2021 08:53:21 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=10971&rating=1&user_id=1"
     body:
       encoding: UTF-8
@@ -154,6 +51,156 @@ http_interactions:
       string: '{"data":{"id":"4","type":"swipe","attributes":{"id":4,"user_id":1,"movie_id":10971,"rating":1}}}'
   recorded_at: Fri, 23 Apr 2021 08:53:21 GMT
 - request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=10753&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"07e276037b6eeec8284bf5eda9f8c7f2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9b721e65-eda2-4bb8-ae02-b3268d215183
+      X-Runtime:
+      - '0.013767'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"26","type":"swipe","attributes":{"id":26,"user_id":1,"movie_id":10753,"rating":1}}}'
+  recorded_at: Tue, 04 May 2021 02:03:16 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=448&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"f1498695544b02f2efff15aad540da9d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 265bfad6-5773-4017-a907-7a3c52a68b5e
+      X-Runtime:
+      - '0.009568'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"29","type":"swipe","attributes":{"id":29,"user_id":1,"movie_id":448,"rating":1}}}'
+  recorded_at: Tue, 04 May 2021 02:04:43 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 067de55e-4d61-434e-8e03-c6a90999b24a
+      X-Runtime:
+      - '0.006688'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Wed, 05 May 2021 06:31:13 GMT
+- request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
     body:
@@ -188,25 +235,122 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"a1062e3729cbb75cee5519146ee01267"
+      - W/"9d72d291962a799717284c90f4c71798"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f2495d99-175c-4788-b72b-09f54204dcc4
+      - de92c72b-4634-4bbc-a8cd-ecb432e83789
       X-Runtime:
-      - '0.404840'
+      - '0.841385'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"12035","type":"movie","attributes":{"title":"Xchange","tmdb_id":26446,"poster_path":"/hAkfDE6gYBDxDvVbnkTd6jXv9iy.jpg","description":"In
-        the near future, a company called Xchange owns a mind transference technology
-        that enables instantaneous travel by swapping bodies with someone at the destination.
-        A member of the privileged corporate class (\"Corpie\") Xchanging for the
-        first time unwittingly switches bodies with a terrorist. Forced to hide in
-        a limited life span cloned body with just 2 days remaining, he races against
-        time to stop the terrorist and regain his body.","genres":[{"id":18,"name":"TV
-        Movie","created_at":"2021-04-17T04:01:28.545Z","updated_at":"2021-04-17T04:01:28.545Z","tmdb_id":10770},{"id":8,"name":"Science
-        Fiction","created_at":"2021-04-17T04:01:07.191Z","updated_at":"2021-04-17T04:01:07.191Z","tmdb_id":878}],"vote_average":5.7,"vote_count":35,"year":"2001"}}}'
-  recorded_at: Fri, 23 Apr 2021 08:53:22 GMT
+      string: '{"data":{"id":"1568","type":"movie","attributes":{"title":"Wazir","tmdb_id":275269,"poster_path":"/lVFYPVDG5hrKYzM4zcDMCMuYyN5.jpg","description":"''Wazir''
+        is a tale of two unlikely friends, a wheelchair-bound chess grandmaster and
+        a brave ATS officer. Brought together by grief and a strange twist of fate,
+        the two men decide to help each other win the biggest games of their lives.
+        But there''s a mysterious, dangerous opponent lurking in the shadows, who
+        is all set to checkmate them.","genres":[{"id":1,"name":"Thriller","created_at":"2021-04-17T04:01:05.640Z","updated_at":"2021-04-17T04:01:05.640Z","tmdb_id":53},{"id":4,"name":"Action","created_at":"2021-04-17T04:01:06.391Z","updated_at":"2021-04-17T04:01:06.391Z","tmdb_id":28},{"id":2,"name":"Crime","created_at":"2021-04-17T04:01:05.930Z","updated_at":"2021-04-17T04:01:05.930Z","tmdb_id":80}],"vote_average":6.6,"vote_count":91,"year":"2016"}}}'
+  recorded_at: Wed, 05 May 2021 06:31:14 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=1568&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"89f00431d34b4746beb93eb13172675a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d66f2a9d-4965-47fb-9af5-2f1d79b2f752
+      X-Runtime:
+      - '0.011091'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"31","type":"swipe","attributes":{"id":31,"user_id":1,"movie_id":1568,"rating":1}}}'
+  recorded_at: Wed, 05 May 2021 06:31:14 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"782946df4d04cb4a09fe38a8d9c557ff"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 849e1b4a-3bb1-4dd7-8cfe-fe9b4c91c4c2
+      X-Runtime:
+      - '0.492981'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2971","type":"movie","attributes":{"title":"Leah Remini:
+        Scientology and the Aftermath","tmdb_id":68901,"poster_path":null,"description":"No
+        description available","genres":[],"vote_average":null,"vote_count":null,"year":"Unknown"}}}'
+  recorded_at: Wed, 05 May 2021 06:31:15 GMT
 recorded_with: VCR 6.0.0
