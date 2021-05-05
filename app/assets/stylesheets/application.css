@@ -193,3 +193,9 @@ body {
   border-radius: 40px;
   box-shadow: 1.5px 4px #363631;
 }
+
+/* friends index page */
+.friends-marquee {
+  text-align: center;
+  margin: 20px;
+}
