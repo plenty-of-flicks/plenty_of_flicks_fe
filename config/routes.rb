@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   get '/profile/edit', to: 'profile#edit', as: :profile_edit
   patch '/profile', to: 'profile#update', as: :profile_update
 
+  # friends routes
+  resources :friends, only: [:index]
+
   # discover routes
   get '/discover/random', to: 'discover#random', as: :discover_random
   get '/discover/swipe', to: 'discover#swipe', as: :swipe
