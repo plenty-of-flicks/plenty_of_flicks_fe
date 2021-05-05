@@ -37,8 +37,22 @@ describe 'friends index' do
     expect(page).to have_content('Invalid email. Friend not added.')
   end
 
-  it 'add friends form when friend has already been created returns flash error' do
+  it 'add friends form when friend has already been created returns flash error', :vcr do
+    stub_omniauth
+    json_response = JSON.parse(File.read('spec/fixtures/friend_add_exists.json'), symbolize_names:true)
+    friends_create_path = ENV['POF_BE'] + '/api/v1/users/1/friends?friend_email=ron@example.com'
+    stub_request(:get, friends_create_path).to_return(status: 200, body: json_response)
 
+    visit google_login_path
+
+    visit friends_path
+
+    within '.friends-creation' do
+      fill_in :email, with: 'ron@example.com'
+      click_button 'Add Friend'
+    end
+
+    expect(page).to have_content('You are already friends with Ron Swanson.')
   end
 
   def stub_omniauth
