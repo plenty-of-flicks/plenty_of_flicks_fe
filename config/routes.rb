@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   patch '/profile', to: 'profile#update', as: :profile_update
 
   # friends routes
-  resources :friends, only: [:index]
+  resources :friends, only: [:index, :create]
 
   # discover routes
   get '/discover/random', to: 'discover#random', as: :discover_random
