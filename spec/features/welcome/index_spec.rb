@@ -116,6 +116,32 @@ describe 'welcome page' do
     end
   end
 
+  it 'logged in user can access groups index page from navbar', :vcr do
+    stub_omniauth
+    visit root_path
+
+    within '.log-in' do
+      click_link
+    end
+
+    within '.topnav' do
+      within '.groups-link' do
+        expect(page).to have_link
+        click_link
+      end
+    end
+
+    expect(current_path).to eq(groups_path)
+  end
+
+  it 'guest user can not see friends link in navbar' do
+    visit root_path
+
+    within '.topnav' do
+      expect(page).not_to have_css('.groups-link')
+    end
+  end
+
   def stub_omniauth
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
