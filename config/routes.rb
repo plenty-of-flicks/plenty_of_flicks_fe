@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   get 'friends/all', to: 'friends#all', as: :friends_all
   resources :friends, only: [:index, :create]
 
+  # groups routes
+  resources :groups, only: [:index]
+
   # discover routes
   get '/discover/random', to: 'discover#random', as: :discover_random
   get '/discover/swipe', to: 'discover#swipe', as: :swipe

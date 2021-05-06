@@ -1,0 +1,20 @@
+<div class="groups-marquee">
+  <%= image_tag('pof_groups_link.png', height: 150) %>
+</div>
+
+<div class="groups-section">
+  <% if @groups %>
+    <h2>Top Three</h2>
+    <div class="groupslist">
+      <% @groups.each do |friend| %>
+        <div class="group-info">
+        </div>
+      <% end %>
+    </div>
+    <br>
+    <%= link_to 'View All Friends', '/friends/all' %>
+    <br><br>
+  <% else %>
+    <h4>You currently have no groups :(</h4>
+  <% end %>
+</div>
