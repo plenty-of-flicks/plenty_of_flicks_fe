@@ -4,20 +4,26 @@
 
 <div class="friends">
   <h1>Friends</h1>
-  <div class="friendslist">
-    <% @friends.each do |friend| %>
-      <div class="friend-info">
-        <h3><%= "#{friend.first_name} #{friend.last_name}" %></h3>
-        <h4><%= friend.email %></h4>
-        <%= image_tag friend.image %>
-      </div>
-    <% end %>
-  </div>
   <% if @friends != [] %>
+    <h2>Top Three</h2>
+    <div class="friendslist">
+      <% @friends.each do |friend| %>
+        <div class="friend-info">
+          <h3><%= "#{friend.first_name} #{friend.last_name}" %></h3>
+          <h4><%= friend.email %></h4>
+          <%= image_tag friend.image, height: 80 %>
+        </div>
+      <% end %>
+    </div>
+    <br>
     <%= link_to 'View All Friends', '/friends/all' %>
+    <br><br>
   <% else %>
     <h4>You currently have no friends :(</h4>
   <% end %>
+</div>
+
+<div class="friends">
   <h2>Add a Friend</h2>
   <h4>
     Enter a registered user's email below to add them as your friend.
