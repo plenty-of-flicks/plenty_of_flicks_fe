@@ -452,117 +452,6 @@ http_interactions:
   recorded_at: Wed, 05 May 2021 06:42:33 GMT
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 49eac14b-e0ea-4e66-84f6-c44fcb8114d4
-      X-Runtime:
-      - '0.003486'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Wed, 05 May 2021 06:43:59 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"550b541be0f3820c0b077afffa7c5906"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8dc78329-a82a-4a4f-bae7-92f7ad282707
-      X-Runtime:
-      - '0.357922'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"7578","type":"movie","attributes":{"title":"The Music
-        Box","tmdb_id":585358,"poster_path":"/oDKkeJzQqA1SqXMeFfjqWUnjW0q.jpg","description":"When
-        six-year-old Sophie is tragically orphaned guardianship is assigned to her
-        estranged aunt Annabelle. The two move into a large, eerie, Victorian house
-        where Sophie unearths a locked wooden box with a strange symbol drawn on it.
-        Desperate to connect with her niece Annabelle pries the lock open revealing
-        a beautiful music box. Each time the music box is wound and replayed it''s
-        surprisingly chilling melody plays slightly longer, captivating Sophie even
-        more. When the music box begins affecting Sophie''s behavior and health Annabelle
-        seeks the aid of a child psychologist and clairvoyant who soon discover the
-        music box is possessed by an evil spirit who seeks to haunt Sophie and destroy
-        Annabelle. As the haunting intensifies time begins to run out and Annabelle
-        finds herself racing against the music box''s melody to defeat the spirit
-        before the last note plays.","genres":[{"id":1,"name":"Thriller","created_at":"2021-04-17T04:01:05.640Z","updated_at":"2021-04-17T04:01:05.640Z","tmdb_id":53}],"vote_average":4.1,"vote_count":34,"year":"2018"}}}'
-  recorded_at: Wed, 05 May 2021 06:44:00 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=7578&rating=1&user_id=1"
     body:
       encoding: UTF-8
@@ -612,6 +501,156 @@ http_interactions:
       string: '{"data":{"id":"43","type":"swipe","attributes":{"id":43,"user_id":1,"movie_id":7578,"rating":1}}}'
   recorded_at: Wed, 05 May 2021 06:44:00 GMT
 - request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=9808&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e584966f144b702db45c84ac06dce381"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3ef3bb94-bf38-46c1-8f75-3bc488cab869
+      X-Runtime:
+      - '0.033767'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"46","type":"swipe","attributes":{"id":46,"user_id":1,"movie_id":9808,"rating":1}}}'
+  recorded_at: Thu, 06 May 2021 04:20:10 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=667&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"98499bf1494252dcb360e1752694c104"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 58dfc797-1e0f-44c7-8166-5804fe2742c9
+      X-Runtime:
+      - '0.021707'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"48","type":"swipe","attributes":{"id":48,"user_id":1,"movie_id":667,"rating":1}}}'
+  recorded_at: Thu, 06 May 2021 04:21:09 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1ec57871-0f0e-42a6-9e59-dd8e71e301c6
+      X-Runtime:
+      - '0.003107'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Thu, 06 May 2021 04:21:35 GMT
+- request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
     body:
@@ -646,21 +685,123 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"3ee44f6a9a1bffdf76274800ebda3ebf"
+      - W/"eb5168127a774432ef4a35fbd452ed78"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b73bd631-eb2a-4edd-b330-4936b6bfe382
+      - 5b0d5a7b-1ae3-41cb-a2bd-317f343ec415
       X-Runtime:
-      - '0.368266'
+      - '0.370697'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"8484","type":"movie","attributes":{"title":"The Tell-Tale
-        Heart","tmdb_id":391207,"poster_path":"/sy26DfYIamuMZN7xPxJQ3xtkJSJ.jpg","description":"A
-        haunting account of a tormented man, haunted by the heart of a man he murdered,
-        who continually re-admits himself into a medical facility, in a futile attempt
-        to escape from his pending madness.","genres":[{"id":1,"name":"Thriller","created_at":"2021-04-17T04:01:05.640Z","updated_at":"2021-04-17T04:01:05.640Z","tmdb_id":53},{"id":12,"name":"Horror","created_at":"2021-04-17T04:01:08.820Z","updated_at":"2021-04-17T04:01:08.820Z","tmdb_id":27}],"vote_average":4.8,"vote_count":5,"year":"2016"}}}'
-  recorded_at: Wed, 05 May 2021 06:44:00 GMT
+      string: '{"data":{"id":"9647","type":"movie","attributes":{"title":"Kid Cannabis","tmdb_id":212231,"poster_path":"/32YMW8j4BbmVgXc9Jl17NFo9BOO.jpg","description":"An
+        eighteen year old high school drop out and his twenty-seven year old friend
+        start trafficking marijuana across the border of Canada in order to make money
+        and their lives are changed forever.","genres":[{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18}],"vote_average":6.4,"vote_count":124,"year":"2014"}}}'
+  recorded_at: Thu, 06 May 2021 04:21:35 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=9647&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"cfe501ed51f9df932d77c4f18d7caee0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 07f2de54-2f55-4dbb-94b3-f01d04d7c0d2
+      X-Runtime:
+      - '0.012403'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"50","type":"swipe","attributes":{"id":50,"user_id":1,"movie_id":9647,"rating":1}}}'
+  recorded_at: Thu, 06 May 2021 04:21:35 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"7acb7d31d6f8721be97a339aa8f806ce"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 309178b0-af80-436d-802d-7a13fcce9e04
+      X-Runtime:
+      - '0.346174'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"437","type":"movie","attributes":{"title":"Nobody Speak:
+        Trials of the Free Press","tmdb_id":430830,"poster_path":"/kX54qobSPGNjYa4UZRit5DrM5TI.jpg","description":"The
+        courtroom and publicity battles between the superstar wrestler and the notorious
+        website explode in a sensational trial all about the limits of the First Amendment
+        and the new no holds barred nature of celebrity life in an internet dominated
+        society.","genres":[{"id":14,"name":"Documentary","created_at":"2021-04-17T04:01:09.079Z","updated_at":"2021-04-17T04:01:09.079Z","tmdb_id":99}],"vote_average":5.8,"vote_count":55,"year":"2017"}}}'
+  recorded_at: Thu, 06 May 2021 04:21:35 GMT
 recorded_with: VCR 6.0.0

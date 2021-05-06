@@ -41,15 +41,63 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f5e1abe7-bce1-41d7-afec-fdb7e5f27dff
+      - d80a11ad-7698-4f38-81d6-1693c53e2855
       X-Runtime:
-      - '0.026702'
+      - '0.005362'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Thu, 06 May 2021 02:37:48 GMT
+  recorded_at: Thu, 06 May 2021 04:21:10 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/users/1/friends"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"b93600ac1053eb604aa70d61dea15d86"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 14d71222-0ea9-4ee5-be5d-702e8d66403b
+      X-Runtime:
+      - '0.004685'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"friendlist","attributes":{"id":1,"friends":[]}}}'
+  recorded_at: Thu, 06 May 2021 04:21:10 GMT
 - request:
     method: post
     uri: "<POF_BE>/api/v1/users/1/friendships?friend_email=ron@example.com"
@@ -89,13 +137,61 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 3691fcdb-a3bc-404e-bc50-17e95a797846
+      - a1807314-2866-43a2-be64-a5c35d706442
       X-Runtime:
-      - '0.148833'
+      - '0.003174'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"error":"Invalid email. Friend not added."}'
-  recorded_at: Thu, 06 May 2021 02:37:48 GMT
+  recorded_at: Thu, 06 May 2021 04:21:10 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/users/1/friends"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"b93600ac1053eb604aa70d61dea15d86"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8001ba67-0fcb-47dd-b4b8-1043c80ca166
+      X-Runtime:
+      - '0.003802'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"friendlist","attributes":{"id":1,"friends":[]}}}'
+  recorded_at: Thu, 06 May 2021 04:21:10 GMT
 recorded_with: VCR 6.0.0
