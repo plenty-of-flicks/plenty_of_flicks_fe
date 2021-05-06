@@ -1,11 +1,16 @@
 require 'rails_helper'
 
 describe 'friends index' do
+  # it 'shows first three friends' do
+  #   stub_omniauth
+  #
+  # end
+
   it 'successful add friends form returns descriptive flash message', :vcr do
     stub_omniauth
-    json_response = JSON.parse(File.read('spec/fixtures/friend_add_success.json'), symbolize_names:true)
-    friends_create_path = ENV['POF_BE'] + '/api/v1/users/1/friends?friend_email=ron@example.com'
-    stub_request(:get, friends_create_path).to_return(status: 200, body: json_response)
+    json_response = JSON.parse(File.read('spec/fixtures/friends/index/friend_add_success.json'), symbolize_names:true)
+    friends_create_path = ENV['POF_BE'] + '/api/v1/users/1/friendships?friend_email=ron@example.com'
+    stub_request(:post, friends_create_path).to_return(status: 200, body: json_response)
 
     visit google_login_path
 
@@ -21,9 +26,9 @@ describe 'friends index' do
 
   it 'add friends form with invalid email returns flash error', :vcr do
     stub_omniauth
-    json_response = JSON.parse(File.read('spec/fixtures/friend_add_invalid_email.json'), symbolize_names:true)
-    friends_create_path = ENV['POF_BE'] + '/api/v1/users/1/friends?friend_email=ron@example.com'
-    stub_request(:get, friends_create_path).to_return(status: 200, body: json_response)
+    json_response = JSON.parse(File.read('spec/fixtures/friends/index/friend_add_invalid_email.json'), symbolize_names:true)
+    friends_create_path = ENV['POF_BE'] + '/api/v1/users/1/friendsships?friend_email=ron@example.com'
+    stub_request(:post, friends_create_path).to_return(status: 200, body: json_response)
 
     visit google_login_path
 
@@ -39,9 +44,9 @@ describe 'friends index' do
 
   it 'add friends form when friend has already been created returns flash error', :vcr do
     stub_omniauth
-    json_response = JSON.parse(File.read('spec/fixtures/friend_add_exists.json'), symbolize_names:true)
-    friends_create_path = ENV['POF_BE'] + '/api/v1/users/1/friends?friend_email=ron@example.com'
-    stub_request(:get, friends_create_path).to_return(status: 200, body: json_response)
+    json_response = JSON.parse(File.read('spec/fixtures/friends/index/friend_add_exists.json'), symbolize_names:true)
+    friends_create_path = ENV['POF_BE'] + '/api/v1/users/1/friendships?friend_email=ron@example.com'
+    stub_request(:post, friends_create_path).to_return(status: 200, body: json_response)
 
     visit google_login_path
 

@@ -52,13 +52,13 @@ class BackendService
   end
 
   def self.create_friendship(user_id, friend_email)
-    response = conn.get("/api/v1/users/#{user_id}/friends") do |req|
+    response = conn.post("/api/v1/users/#{user_id}/friendships") do |req|
       req.params[:friend_email] = friend_email
     end
 
     json = JSON.parse(response.body, symbolize_names: true)
   end
-
+  
   def self.conn
     Faraday.new(url: ENV['POF_BE'])
   end
