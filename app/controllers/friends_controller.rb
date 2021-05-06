@@ -2,7 +2,7 @@ class FriendsController < ApplicationController
   before_action :authenticate
 
   def index
-
+    @friends = UserFacade.make_friendslist(current_user.id)
   end
 
   def create
