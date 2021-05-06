@@ -19,6 +19,28 @@ describe 'friends index' do
     expect(page).to have_content('tom@example.com')
   end
 
+  it 'view all friends link shows all friends', :vcr do
+    stub_omniauth
+    json_response = JSON.parse(File.read('spec/fixtures/friends/index/friendslist_four_friends.json'), symbolize_names:true)
+    friendslist_path = ENV['POF_BE'] + '/api/v1/users/1/friends'
+    stub_request(:get, friendslist_path).to_return(status: 200, body: json_response)
+
+    visit google_login_path
+
+    visit friends_path
+
+    click_link 'View All Friends'
+
+    expect(page).to have_content('Leslie Knope')
+    expect(page).to have_content('leslie@example.com')
+    expect(page).to have_content('Ron Swanson')
+    expect(page).to have_content('ron@example.com')
+    expect(page).to have_content('Tom Haverford')
+    expect(page).to have_content('tom@example.com')
+    expect(page).to have_content('Tammy Swanson')
+    expect(page).to have_content('tammy2@example.com')
+  end
+
   it 'displays message when user has no friends', :vcr do
     stub_omniauth
     json_response = JSON.parse(File.read('spec/fixtures/friends/index/friendslist_no_friends.json'), symbolize_names:true)
