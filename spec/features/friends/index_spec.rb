@@ -1,10 +1,23 @@
 require 'rails_helper'
 
 describe 'friends index' do
-  # it 'shows first three friends' do
-  #   stub_omniauth
-  #
-  # end
+  it 'shows top three friends', :vcr do
+    stub_omniauth
+    json_response = JSON.parse(File.read('spec/fixtures/friends/index/friendslist.json'), symbolize_names:true)
+    friendslist_path = ENV['POF_BE'] + '/api/v1/users/1/friends'
+    stub_request(:get, friendslist_path).to_return(status: 200, body: json_response)
+
+    visit google_login_path
+
+    visit friends_path
+
+    expect(page).to have_content('Leslie Knope')
+    expect(page).to have_content('leslie@example.com')
+    expect(page).to have_content('Ron Swanson')
+    expect(page).to have_content('ron@example.com')
+    expect(page).to have_content('Tom Haverford')
+    expect(page).to have_content('tom@example.com')
+  end
 
   it 'successful add friends form returns descriptive flash message', :vcr do
     stub_omniauth
