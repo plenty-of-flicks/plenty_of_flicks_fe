@@ -41,13 +41,61 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 14fc5482-2f05-48e9-8ea6-5bd8149def49
+      - 6c550396-2085-4df0-94f0-e062cb40f80a
       X-Runtime:
-      - '0.006150'
+      - '0.002955'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Tue, 04 May 2021 02:03:15 GMT
+  recorded_at: Thu, 06 May 2021 04:21:36 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/users/1/friends"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"b93600ac1053eb604aa70d61dea15d86"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0e343843-674d-4c0d-89e6-e7f380fccbfa
+      X-Runtime:
+      - '0.003673'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"friendlist","attributes":{"id":1,"friends":[]}}}'
+  recorded_at: Thu, 06 May 2021 04:21:36 GMT
 recorded_with: VCR 6.0.0

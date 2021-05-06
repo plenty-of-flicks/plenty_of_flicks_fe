@@ -60,7 +60,7 @@ describe 'welcome page' do
     visit root_path
 
     within '.topnav' do
-      expect(page).not_to have_link('Profile')
+      expect(page).not_to have_css('.profile-link')
     end
   end
 
@@ -86,10 +86,35 @@ describe 'welcome page' do
     visit root_path
 
     within '.topnav' do
-      expect(page).not_to have_link('Find Movies')
+      expect(page).not_to have_css('.discover-link')
     end
   end
 
+  it 'logged in user can access friends index page from navbar', :vcr do
+    stub_omniauth
+    visit root_path
+
+    within '.log-in' do
+      click_link
+    end
+
+    within '.topnav' do
+      within '.friends-link' do
+        expect(page).to have_link
+        click_link
+      end
+    end
+
+    expect(current_path).to eq(friends_path)
+  end
+
+  it 'guest user can not see friends link in navbar' do
+    visit root_path
+
+    within '.topnav' do
+      expect(page).not_to have_css('.friends-link')
+    end
+  end
 
   def stub_omniauth
     OmniAuth.config.test_mode = true

@@ -37,17 +37,17 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"97075d945edb3ba6db9e65f49fc46bd2"
+      - W/"855efcaef58a5d44d99f51c0b3600aa5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 81ca7a77-de9b-4b9c-9533-dd3ee56e68af
+      - accf8d10-84a2-4d3d-9cb9-0b3450cc4f7b
       X-Runtime:
-      - '0.022571'
+      - '0.013034'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"5","type":"swipe","attributes":{"id":5,"user_id":1,"movie_id":4193,"rating":0}}}'
-  recorded_at: Fri, 23 Apr 2021 08:58:22 GMT
+      string: '{"data":{"id":"27","type":"swipe","attributes":{"id":27,"user_id":1,"movie_id":4193,"rating":0}}}'
+  recorded_at: Tue, 04 May 2021 02:03:17 GMT
 recorded_with: VCR 6.0.0
