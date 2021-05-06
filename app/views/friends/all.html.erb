@@ -2,7 +2,7 @@
   <%= image_tag('pof_friends_link.png', height: 150) %>
 </div>
 
-<div class="friends">
+<div class="friends-section">
   <% if @friends != [] %>
     <h2>All Friends</h2>
     <% @friends.each_slice(4) do |friend_slice| %>
@@ -22,7 +22,7 @@
   <% end %>
 </div>
 
-<div class="friends">
+<div class="friends-section">
   <h2>Add a Friend</h2>
   <h4>
     Enter a registered user's email below to add them as your friend.
