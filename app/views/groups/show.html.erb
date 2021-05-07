@@ -5,9 +5,15 @@
 <div class="groups-section">
   <h2><%= @group.name %></h2>
   <h3>Members:</h3>
-  <% @group.users.each do |user| %>
-    <h4><%= "#{user.first_name} #{user.last_name}" %></h4>
-    <p><%= user.email %></p>
-    <%= image_tag user.image, height: 80 %>
+  <% @group.users.each_slice(3) do |user_slice| %>
+    <div class="groupslist">
+      <% user_slice.each do |user| %>
+        <div class="friend-info">
+          <h4><%= "#{user.first_name} #{user.last_name}" %></h4>
+          <p><%= user.email %></p>
+          <%= image_tag user.image, height: 80 %>
+        </div>
+      <% end %>
+    </div>
   <% end %>
 </div>
