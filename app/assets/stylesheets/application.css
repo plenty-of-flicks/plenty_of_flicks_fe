@@ -228,6 +228,7 @@ body {
   border: 2px solid black;
   opacity: 92%;
   text-align: center;
+  width: 200px;
 }
 
 /* groups index page */
@@ -246,4 +247,23 @@ body {
   margin: 20px;
   border-radius: 40px;
   box-shadow: 1.5px 4px #363631;
+}
+
+.groupslist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.group-info {
+  background: white;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  width: 200px;
 }
