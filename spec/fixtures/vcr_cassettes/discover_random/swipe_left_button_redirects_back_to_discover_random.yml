@@ -652,107 +652,6 @@ http_interactions:
   recorded_at: Thu, 06 May 2021 04:21:08 GMT
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 262e384c-e07f-43c3-8421-5149d0e6a12b
-      X-Runtime:
-      - '0.004603'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Thu, 06 May 2021 04:21:34 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"584661425cfc40750205d3dc65d56cde"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8ff40085-72ed-48b1-a9dd-9926f0a01be4
-      X-Runtime:
-      - '0.348387'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10663","type":"movie","attributes":{"title":"China Moon","tmdb_id":26337,"poster_path":"/kJW9cOlmKxy8yhY0xmLyVoW886H.jpg","description":"Detective
-        Kyle Bodine falls for Rachel Munro who is trapped in a violent marriage. After
-        shooting her husband, Kyle relucantly agrees to help hide the body, but Kyle''s
-        partner is showing an unusual flair for finding clues.","genres":[{"id":13,"name":"Mystery","created_at":"2021-04-17T04:01:08.831Z","updated_at":"2021-04-17T04:01:08.831Z","tmdb_id":9648},{"id":1,"name":"Thriller","created_at":"2021-04-17T04:01:05.640Z","updated_at":"2021-04-17T04:01:05.640Z","tmdb_id":53}],"vote_average":6.0,"vote_count":64,"year":"1994"}}}'
-  recorded_at: Thu, 06 May 2021 04:21:34 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=10663&rating=0&user_id=1"
     body:
       encoding: UTF-8
@@ -802,6 +701,106 @@ http_interactions:
       string: '{"data":{"id":"49","type":"swipe","attributes":{"id":49,"user_id":1,"movie_id":10663,"rating":0}}}'
   recorded_at: Thu, 06 May 2021 04:21:34 GMT
 - request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=3646&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"aa92ab7542045ffb48e02062396fd6f5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 20d68c9b-b497-4196-84c8-f17b91c0591e
+      X-Runtime:
+      - '0.072221'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"51","type":"swipe","attributes":{"id":51,"user_id":1,"movie_id":3646,"rating":0}}}'
+  recorded_at: Fri, 07 May 2021 07:09:54 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 963c2bdf-0486-4f0f-a011-90b27f5f5478
+      X-Runtime:
+      - '0.027705'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Fri, 07 May 2021 07:12:50 GMT
+- request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
     body:
@@ -836,18 +835,125 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"77db6a560a46e54cb29674a8a61f26e2"
+      - W/"91f0a147c8a026df334f2c63ffa575a5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 57755be2-151f-455a-b5da-173209214d66
+      - 7b2f4519-6610-4d78-8f5b-884869e385c9
       X-Runtime:
-      - '0.368295'
+      - '0.388166'
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjp7ImlkIjoiMjE5NyIsInR5cGUiOiJtb3ZpZSIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJXeW5vbm5hIEVhcnAiLCJ0bWRiX2lkIjo2NTk4OCwicG9zdGVyX3BhdGgiOm51bGwsImRlc2NyaXB0aW9uIjoiWXVtaSwgYSB3b21hbiBzbWVsbGluZyB3aXRoIGRlY2FkZW50IGJlYXV0eSwgd2VudCB0byB0aGUgYmFyIHdoaWNoIHNoZSBoYWQgaGVyIGZpcnN0IGRhdGUgd2l0aCBoZXIgaHVzYmFuZCBLb3RhLiBTaGUgbWV0IGEgZmFtb3VzIHBob3RvZ3JhcGhlciBLZW5ueSBpbiB0aGUgYmFyLiBLZW5ueSB3YXMgYWRkaWN0ZWQgdG8gdGhlIGFibm9ybWFsIGJlYXV0eSBvZiBZdW1pLiBIZSB0aGVuIHRvb2sgWXVtaSB0byBoaXMgc3R1ZGlvLCBhbmQgbm90IG9ubHkgdG9vayBwaG90b3Mgd2l0aCBZdW1pLCBidXQgYWxzbyB0b29rIGhlciBib2R5LiBLZW5ueSB0aG91Z2h0IFl1bWkgd2FzIG9ubHkgb25lIG9mIHRoZSBudW1lcm91cyB3b21lbiB0aGF0IGhlIGhhZCBvbmUtbmlnaHQtc3RhbmRzIHdpdGguIEhvd2V2ZXIsIFl1bWkgYmVsaWV2ZWQgdGhhdCBLZW5ueSB3YXMgaGVyIG9ubHkgbWFuIGV4Y2VwdCBoZXIgaHVzYmFuZC4gSW4gb3JkZXIgdG8gc3RheSB3aXRoIEtlbm55IGFsbCB0aGUgdGltZSwgWXVtaSB0cmlja2VkIEtlbm55IHRvIGhlciBtYW5zaW9uIGFuZCBjb25maW5lZCBoaW0sIGFuZCBldmVuIGN1dCBoaXMgdG9lIHdoZW4gS2Vubnkgd2FzIHRyeWluZyB0byBlc2NhcGUuIFdpdGggdGhlIHBoeXNpY2FsIGFuZCBwc3ljaG9sb2dpY2FsIHRocmVhdHMsIEtlbm55IHN0YXJ0ZWQgdG8gZmVlbCBzeW1wYXRoeSBmb3IgWXVtaSwgYW5kIGVuam95ZWQgWXVtaeKAmXMg4oCcc3BlY2lhbCBzZXJ2aWNlc+KAnSB1bnRpbCBoZSBmaW5hbGx5IGZvcmdvdCB0aGF0IGhlIHdhcyBpbiBjb25maW5lbWVudCIsImdlbnJlcyI6W10sInZvdGVfYXZlcmFnZSI6MTAuMCwidm90ZV9jb3VudCI6MSwieWVhciI6IiJ9fX0=
-  recorded_at: Thu, 06 May 2021 04:21:35 GMT
+      encoding: UTF-8
+      string: '{"data":{"id":"282","type":"movie","attributes":{"title":"The Thief
+        and the Fool","tmdb_id":265002,"poster_path":"/yLyCNE1IxXJKLE1i2XF5vJCfhYV.jpg","description":"A
+        foolish man down on his luck is befriended by another man who lost his eye
+        in a brawl. Little does he know that his new, one-eyed friend is scheming
+        to steal his eye and has enlisted the help of his nurse friend (Ruby), who
+        works in an organ-trading hospital.","genres":[{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35}],"vote_average":5.5,"vote_count":4,"year":"2013"}}}'
+  recorded_at: Fri, 07 May 2021 07:12:51 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=282&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"65a33e100cd492e9d7d76d5e7e9f3c4e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8b5e8e4f-f5f2-4434-b948-b35af4e99aea
+      X-Runtime:
+      - '0.011208'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"53","type":"swipe","attributes":{"id":53,"user_id":1,"movie_id":282,"rating":0}}}'
+  recorded_at: Fri, 07 May 2021 07:12:51 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"b9d2a7d922c5e200fbf0a9046230269c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a65c333f-f9cf-4411-aead-d722d7657d52
+      X-Runtime:
+      - '0.392787'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"9323","type":"movie","attributes":{"title":"American
+        Circumcision","tmdb_id":534598,"poster_path":"/swE6A2Cq62niqi1ls5ZLSmtgdv0.jpg","description":"Circumcision
+        is the most common surgery in America, yet America is the only industrialized
+        country in the world to routinely practice non-religious infant circumcision.
+        Why does America continue to cut the genitals of it''s newborn baby males
+        when the rest of the world does not?","genres":[{"id":14,"name":"Documentary","created_at":"2021-04-17T04:01:09.079Z","updated_at":"2021-04-17T04:01:09.079Z","tmdb_id":99}],"vote_average":6.5,"vote_count":6,"year":"2017"}}}'
+  recorded_at: Fri, 07 May 2021 07:12:51 GMT
 recorded_with: VCR 6.0.0

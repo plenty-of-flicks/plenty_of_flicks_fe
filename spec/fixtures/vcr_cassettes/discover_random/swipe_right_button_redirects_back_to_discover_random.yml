@@ -602,107 +602,6 @@ http_interactions:
   recorded_at: Thu, 06 May 2021 04:21:09 GMT
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 1ec57871-0f0e-42a6-9e59-dd8e71e301c6
-      X-Runtime:
-      - '0.003107'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Thu, 06 May 2021 04:21:35 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"eb5168127a774432ef4a35fbd452ed78"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 5b0d5a7b-1ae3-41cb-a2bd-317f343ec415
-      X-Runtime:
-      - '0.370697'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"9647","type":"movie","attributes":{"title":"Kid Cannabis","tmdb_id":212231,"poster_path":"/32YMW8j4BbmVgXc9Jl17NFo9BOO.jpg","description":"An
-        eighteen year old high school drop out and his twenty-seven year old friend
-        start trafficking marijuana across the border of Canada in order to make money
-        and their lives are changed forever.","genres":[{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18}],"vote_average":6.4,"vote_count":124,"year":"2014"}}}'
-  recorded_at: Thu, 06 May 2021 04:21:35 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=9647&rating=1&user_id=1"
     body:
       encoding: UTF-8
@@ -752,6 +651,106 @@ http_interactions:
       string: '{"data":{"id":"50","type":"swipe","attributes":{"id":50,"user_id":1,"movie_id":9647,"rating":1}}}'
   recorded_at: Thu, 06 May 2021 04:21:35 GMT
 - request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=3084&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"5173df6ee183721aa7cf17a93f555be0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 15dfa3bb-6193-4810-86dc-f10b5b26228f
+      X-Runtime:
+      - '0.009544'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"52","type":"swipe","attributes":{"id":52,"user_id":1,"movie_id":3084,"rating":1}}}'
+  recorded_at: Fri, 07 May 2021 07:09:55 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a02fe2d2-8822-418c-a09c-d045225e0eab
+      X-Runtime:
+      - '0.003576'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Fri, 07 May 2021 07:12:51 GMT
+- request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
     body:
@@ -786,22 +785,117 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"7acb7d31d6f8721be97a339aa8f806ce"
+      - W/"03dbb4f857bbc299db758173784699a8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 309178b0-af80-436d-802d-7a13fcce9e04
+      - 0e04b300-dc5e-4522-8b8d-b2bb8d7546b1
       X-Runtime:
-      - '0.346174'
+      - '0.399891'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiMTIzNDIiLCJ0eXBlIjoibW92aWUiLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiSnVzdCBBZGQgTWFnaWMiLCJ0bWRiX2lkIjo2MjkwNCwicG9zdGVyX3BhdGgiOiIvN1hoSWFIc0ZOamo4SHBGQ0wwMHU2anRRZzV5LmpwZyIsImRlc2NyaXB0aW9uIjoiQSBsdWNreSBjb3VwbGUgaGl0cyB0aGUgamFja3BvdCB3aGVuIHRoZXkgcHVyY2hhc2UgYSAxOXRoIGNlbnR1cnkgcGxhbnRhdGlvbiBob21lIGZvciBwZW5uaWVzIG9uIHRoZSBkb2xsYXIuIERldGVybWluZWQgdG8gZ2V0IHJpY2ggcXVpY2ssIHRoZXkgaW52aXRlIHRoZWlyIGZyaWVuZHMgdXAgZm9yIHRoZSB3ZWVrZW5kIHRvIGNlbGVicmF0ZSB0aGVpciBnb29kIGZvcnR1bmUuIEl04oCZcyBxdWlja2x5IGFwcGFyZW50IHRoYXQgdGhlIHBsYW50YXRpb24gaG9tZeKAmXMgZm9ybWVyIHJlc2lkZW50cyBoYXZlIG5vdCBsZWZ0IGFuZCB0aGUgdW5sdWNreSB5b3V0aHMgc3VkZGVubHkgZmluZCB0aGVtc2VsdmVzIHJ1bm5pbmcgZm9yIHRoZWlyIGxpdmVzISIsImdlbnJlcyI6W3siaWQiOjEyLCJuYW1lIjoiSG9ycm9yIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MDguODIwWiIsInVwZGF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA4LjgyMFoiLCJ0bWRiX2lkIjoyN31dLCJ2b3RlX2F2ZXJhZ2UiOjUuMywidm90ZV9jb3VudCI6MjQsInllYXIiOiIyMDExIn19fQ==
+  recorded_at: Fri, 07 May 2021 07:12:52 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=12342&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"fc7262534232f1fcb405a5753075f035"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 17ba171b-e1f0-43ef-8cff-1954285a90b3
+      X-Runtime:
+      - '0.013350'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"437","type":"movie","attributes":{"title":"Nobody Speak:
-        Trials of the Free Press","tmdb_id":430830,"poster_path":"/kX54qobSPGNjYa4UZRit5DrM5TI.jpg","description":"The
-        courtroom and publicity battles between the superstar wrestler and the notorious
-        website explode in a sensational trial all about the limits of the First Amendment
-        and the new no holds barred nature of celebrity life in an internet dominated
-        society.","genres":[{"id":14,"name":"Documentary","created_at":"2021-04-17T04:01:09.079Z","updated_at":"2021-04-17T04:01:09.079Z","tmdb_id":99}],"vote_average":5.8,"vote_count":55,"year":"2017"}}}'
-  recorded_at: Thu, 06 May 2021 04:21:35 GMT
+      string: '{"data":{"id":"54","type":"swipe","attributes":{"id":54,"user_id":1,"movie_id":12342,"rating":1}}}'
+  recorded_at: Fri, 07 May 2021 07:12:52 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"14dfc54d871d5300b0e2b6212b2db81f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8e5871b6-a087-4091-bc61-b6806f90fe5b
+      X-Runtime:
+      - '0.374165'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiMTc1NiIsInR5cGUiOiJtb3ZpZSIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJCxIFodWJhbGkgMjogVGhlIENvbmNsdXNpb24iLCJ0bWRiX2lkIjozNTAzMTIsInBvc3Rlcl9wYXRoIjoiL3NYZjMwRjJIRnBzRlBYbE56N2pwT3lTU1Y5SS5qcGciLCJkZXNjcmlwdGlvbiI6IldoZW4gTWFoZW5kcmEsIHRoZSBzb24gb2YgQsSBaHViYWxpLCBsZWFybnMgYWJvdXQgaGlzIGhlcml0YWdlLCBoZSBiZWdpbnMgdG8gbG9vayBmb3IgYW5zd2Vycy4gSGlzIHN0b3J5IGlzIGp1eHRhcG9zZWQgd2l0aCBwYXN0IGV2ZW50cyB0aGF0IHVuZm9sZGVkIGluIHRoZSBNYWhpc2htYXRpIEtpbmdkb20uIiwiZ2VucmVzIjpbeyJpZCI6NCwibmFtZSI6IkFjdGlvbiIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA2LjM5MVoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNi4zOTFaIiwidG1kYl9pZCI6Mjh9LHsiaWQiOjMsIm5hbWUiOiJEcmFtYSIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA1Ljk3OFoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNS45NzhaIiwidG1kYl9pZCI6MTh9XSwidm90ZV9hdmVyYWdlIjo3LjIsInZvdGVfY291bnQiOjQ0OCwieWVhciI6IjIwMTcifX19
+  recorded_at: Fri, 07 May 2021 07:12:52 GMT
 recorded_with: VCR 6.0.0

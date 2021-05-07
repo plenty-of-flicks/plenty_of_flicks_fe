@@ -41,13 +41,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - '079144c9-a3b5-476b-b9a1-beb71a48f672'
+      - 40bf5b9e-71e9-4c74-ac00-4fa26c305fd9
       X-Runtime:
-      - '0.003301'
+      - '0.003710'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Fri, 07 May 2021 07:12:53 GMT
+  recorded_at: Fri, 07 May 2021 07:15:19 GMT
 recorded_with: VCR 6.0.0
