@@ -118,6 +118,10 @@ describe 'welcome page' do
 
   it 'logged in user can access groups index page from navbar', :vcr do
     stub_omniauth
+    json_response = JSON.parse(File.read('spec/fixtures/groups/index/groups_no_groups.json'), symbolize_names:true)
+    groups_list_path = ENV['POF_BE'] + '/api/v1/users/1/groups'
+    stub_request(:get, groups_list_path).to_return(status: 200, body: json_response)
+
     visit root_path
 
     within '.log-in' do
