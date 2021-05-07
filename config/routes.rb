@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   resources :friends, only: [:index, :create]
 
   # groups routes
+  get 'groups/all', to: 'groups#all', as: :groups_all
   resources :groups, only: [:index]
 
   # discover routes
