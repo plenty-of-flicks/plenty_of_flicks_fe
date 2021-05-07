@@ -2,7 +2,7 @@ class GroupsController < ApplicationController
   before_action :authenticate
 
   def index
-    @groups = UserFacade.top_three_groups(current_user.id)
+    @groups = GroupFacade.top_three_groups(current_user.id)
   end
 
   def show
@@ -10,7 +10,7 @@ class GroupsController < ApplicationController
   end
 
   def all
-    @groups = UserFacade.all_groups(current_user.id)
+    @groups = GroupFacade.all_groups(current_user.id)
   end
 
   def new
