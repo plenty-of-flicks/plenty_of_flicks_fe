@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   # groups routes
   get 'groups/all', to: 'groups#all', as: :groups_all
-  resources :groups, only: [:index]
+  resources :groups, only: [:index, :new, :create, :show]
 
   # discover routes
   get '/discover/random', to: 'discover#random', as: :discover_random
