@@ -12,24 +12,27 @@
   <body>
     <nav class = "topnav">
       <div class="home-link">
-        <%= link_to image_tag('pof_home_link.png', width:150), root_path %>
+        <%= link_to image_tag('pof_home_link.png', width:120), root_path %>
       </div>
       <% if current_user %>
         <div class="profile-link">
-          <%= link_to image_tag('pof_profile_link.png', width:150), profile_path %>
-        </div>
-        <div class="friends-link">
-          <%= link_to image_tag('pof_friends_link.png', width:150), friends_path %>
+          <%= link_to image_tag('pof_profile_link.png', width:120), profile_path %>
         </div>
         <div class="discover-link">
-          <%= link_to image_tag('pof_discover_link.png', width:150), discover_index_path %>
+          <%= link_to image_tag('pof_discover_link.png', width:120), discover_index_path %>
+        </div>
+        <div class="friends-link">
+          <%= link_to image_tag('pof_friends_link.png', width:120), friends_path %>
+        </div>
+        <div class="groups-link">
+          <%= link_to image_tag('pof_groups_link.png', width:120), groups_path %>
         </div>
         <div class="log-out">
-          <%= link_to image_tag('pof_log_out_link.png', width:150), google_logout_path %>
+          <%= link_to image_tag('pof_log_out_link.png', width:120), google_logout_path %>
         </div>
       <% else %>
       <div class="log-in">
-        <%= link_to image_tag('pof_log_in_link.png', width:150), google_login_path %>
+        <%= link_to image_tag('pof_log_in_link.png', width:120), google_login_path %>
       </div>
       <% end %>
     </nav>

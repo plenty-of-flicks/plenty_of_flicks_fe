@@ -18,9 +18,16 @@ class UserFacade
     end
   end
 
-  def self.make_friendslist(user_id)
+  def self.top_three_friends(user_id)
     friends_data = BackendService.get_friendslist(user_id)
     friends_data[:data][:attributes][:friends].sample(3).map do |friend_data|
+      Friend.new(friend_data)
+    end
+  end
+
+  def self.all_friends(user_id)
+    friends_data = BackendService.get_friendslist(user_id)
+    friends_data[:data][:attributes][:friends].map do |friend_data|
       Friend.new(friend_data)
     end
   end

@@ -4,19 +4,19 @@
 
 <div class="friends-section">
   <% if @friends != [] %>
-    <h2>Top Three</h2>
-    <div class="friendslist">
-      <% @friends.each do |friend| %>
-        <div class="friend-info">
-          <h3><%= "#{friend.first_name} #{friend.last_name}" %></h3>
-          <h4><%= friend.email %></h4>
-          <%= image_tag friend.image, height: 80 %>
-        </div>
-      <% end %>
-    </div>
-    <br>
-    <%= link_to 'View All Friends', '/friends/all' %>
-    <br><br>
+    <h2>All Friends</h2>
+    <% @friends.each_slice(4) do |friend_slice| %>
+      <div class="friendslist">
+        <% friend_slice.each do |friend| %>
+          <div class="friend-info">
+            <h3><%= "#{friend.first_name} #{friend.last_name}" %></h3>
+            <h4><%= friend.email %></h4>
+            <%= image_tag friend.image, height: 80 %>
+          </div>
+        <% end %>
+      </div>
+      <br><br>
+    <% end %>
   <% else %>
     <h4>You currently have no friends :(</h4>
   <% end %>

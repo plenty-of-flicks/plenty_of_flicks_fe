@@ -14,7 +14,12 @@ Rails.application.routes.draw do
   patch '/profile', to: 'profile#update', as: :profile_update
 
   # friends routes
+  get 'friends/all', to: 'friends#all', as: :friends_all
   resources :friends, only: [:index, :create]
+
+  # groups routes
+  get 'groups/all', to: 'groups#all', as: :groups_all
+  resources :groups, only: [:index, :new, :create, :show]
 
   # discover routes
   get '/discover/random', to: 'discover#random', as: :discover_random

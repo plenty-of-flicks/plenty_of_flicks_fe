@@ -1,0 +1,27 @@
+<div class="groups-marquee">
+  <%= image_tag('pof_groups_link.png', height: 150) %>
+</div>
+
+<div class="groups-section">
+  <% if @groups != [] %>
+    <h2>Top Three</h2>
+    <div class="groupslist">
+      <% @groups.each do |group| %>
+        <div class="group-info">
+          <h3><%= link_to("#{group.name}", group_path(group.id)) %></h3>
+          <h4>Members:</h4>
+          <% group.users.each do |user| %>
+            <p><%= "#{user.first_name} #{user.last_name}" %></p>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+    <br>
+    <%= link_to 'View All Groups', groups_all_path %>
+    <br><br>
+  <% else %>
+    <h4>You currently have no groups :(</h4>
+  <% end %>
+
+  <%= link_to 'Create a New Group', '/groups/new' %>
+</div>

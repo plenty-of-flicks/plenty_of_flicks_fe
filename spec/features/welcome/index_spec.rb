@@ -116,6 +116,36 @@ describe 'welcome page' do
     end
   end
 
+  it 'logged in user can access groups index page from navbar', :vcr do
+    stub_omniauth
+    json_response = JSON.parse(File.read('spec/fixtures/groups/index/groups_no_groups.json'), symbolize_names:true)
+    groups_list_path = ENV['POF_BE'] + '/api/v1/users/1/groups'
+    stub_request(:get, groups_list_path).to_return(status: 200, body: json_response)
+
+    visit root_path
+
+    within '.log-in' do
+      click_link
+    end
+
+    within '.topnav' do
+      within '.groups-link' do
+        expect(page).to have_link
+        click_link
+      end
+    end
+
+    expect(current_path).to eq(groups_path)
+  end
+
+  it 'guest user can not see groups link in navbar' do
+    visit root_path
+
+    within '.topnav' do
+      expect(page).not_to have_css('.groups-link')
+    end
+  end
+
   def stub_omniauth
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
