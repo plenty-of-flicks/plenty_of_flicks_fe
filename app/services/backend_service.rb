@@ -71,6 +71,29 @@ class BackendService
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.create_group(name)
+    response = conn.post("/api/v1/groups") do |req|
+      req.params[:name] = name
+    end
+
+    json = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.get_group_details(id)
+    response = conn.get("/api/v1/groups/#{id}")
+
+    json = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.create_user_group(user_id, group_id)
+    response = conn.post("/api/v1/user_groups") do |req|
+      req.params[:user_id] = user_id
+      req.params[:group_id] = group_id
+    end
+
+    json = JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.conn
     Faraday.new(url: ENV['POF_BE'])
   end
