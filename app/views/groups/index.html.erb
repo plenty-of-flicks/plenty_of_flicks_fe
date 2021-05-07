@@ -3,7 +3,7 @@
 </div>
 
 <div class="groups-section">
-  <% if @groups %>
+  <% if @groups != [] %>
     <h2>Top Three</h2>
     <div class="groupslist">
       <% @groups.each do |group| %>

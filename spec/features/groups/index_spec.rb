@@ -20,6 +20,19 @@ describe 'groups index page' do
     end
   end
 
+  it 'displays message when user has no groups', :vcr do
+    stub_omniauth
+    json_response = JSON.parse(File.read('spec/fixtures/groups/index/groups_no_groups.json'), symbolize_names:true)
+    groups_list_path = ENV['POF_BE'] + '/api/v1/users/1/groups'
+    stub_request(:get, groups_list_path).to_return(status: 200, body: json_response)
+
+    visit google_login_path
+
+    visit groups_path
+
+    expect(page).to have_content('You currently have no groups :(')
+  end
+
   def stub_omniauth
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
