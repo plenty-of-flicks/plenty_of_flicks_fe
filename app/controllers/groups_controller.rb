@@ -1,5 +1,7 @@
 class GroupsController < ApplicationController
-  def index
+  before_action :authenticate
 
+  def index
+    @groups = UserFacade.top_three_groups(current_user.id)
   end
 end

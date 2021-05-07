@@ -65,6 +65,12 @@ class BackendService
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.get_group_list(user_id)
+    response = conn.get("/api/v1/users/#{user_id}/groups")
+
+    json = JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.conn
     Faraday.new(url: ENV['POF_BE'])
   end

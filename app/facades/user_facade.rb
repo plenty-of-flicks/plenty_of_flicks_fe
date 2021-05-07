@@ -31,4 +31,14 @@ class UserFacade
       Friend.new(friend_data)
     end
   end
+
+  def self.top_three_groups(user_id)
+    groups_data = BackendService.get_group_list(user_id)
+    groups = groups_data.sample(3).map do |group_data|
+      group_members = group_data[:data][:attributes][:users].map do |user_data|
+        GroupMember.new(user_data)
+      end
+      Group.new(group_data, group_members)
+    end
+  end
 end
