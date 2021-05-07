@@ -134,7 +134,7 @@ describe 'welcome page' do
     expect(current_path).to eq(groups_path)
   end
 
-  it 'guest user can not see friends link in navbar' do
+  it 'guest user can not see groups link in navbar' do
     visit root_path
 
     within '.topnav' do
