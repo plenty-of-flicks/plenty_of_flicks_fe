@@ -72,7 +72,11 @@ describe 'groups index page' do
 
     click_link 'Create a New Group'
 
-    binding.pry
+    expect(current_path).to eq(new_group_path)
+    expect(page).to have_content('Ron Swanson')
+    expect(page).to have_content('Tammy Swanson')
+    expect(page).to have_content('Leslie Knope')
+    expect(page).to have_content('Tom Haverford')
   end
 
   def stub_omniauth
