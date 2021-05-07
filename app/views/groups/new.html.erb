@@ -1,0 +1,32 @@
+<div class="groups-marquee">
+  <%= image_tag('pof_groups_link.png', height: 150) %>
+</div>
+
+<div class="groups-section">
+  <h2>Create a Group</h2>
+  <h4>
+    Enter a name for the group and the friends you'd like to add.
+  </h4>
+  <div class="groups-creation">
+    <%= form_with(url: groups_path, method: :post) do |f| %>
+      <h3>
+        <%= f.label('Name') %>
+        <%= f.text_field :name %>
+      </h3>
+      <% @friends.each_slice(3) do |friend_slice| %>
+        <div class="group-slice">
+          <% friend_slice.each do |friend| %>
+            <div class="group-check-box">
+              <h3>
+                <%= f.label("friend_#{friend.id}", "#{friend.first_name} #{friend.last_name}") %>
+                <%= f.check_box friend.id.to_s.to_sym %>
+              </h3>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+
+      <%= submit_tag("Create Group") %>
+    <% end %>
+  </div>
+</div>
