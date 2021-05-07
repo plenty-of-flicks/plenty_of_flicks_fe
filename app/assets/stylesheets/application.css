@@ -267,3 +267,13 @@ body {
   text-align: center;
   width: 200px;
 }
+
+/* groups new page */
+.group-slice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
