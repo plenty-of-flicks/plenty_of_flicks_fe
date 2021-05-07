@@ -6,8 +6,13 @@
   <% if @groups %>
     <h2>Top Three</h2>
     <div class="groupslist">
-      <% @groups.each do |friend| %>
+      <% @groups.each do |group| %>
         <div class="group-info">
+          <h3><%= group.name %></h3>
+          <h4>Members</h4>
+          <% group.users.each do |user| %>
+            <p><%= "#{user.first_name} #{user.last_name}" %></p>
+          <% end %>
         </div>
       <% end %>
     </div>
