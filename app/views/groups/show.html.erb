@@ -43,7 +43,6 @@
           <h4>Currently Available On:</h4>
           <% if match.services %>
             <% match.services.each do |service| %>
-              <p><%= service.name %></p>
               <%= image_tag(service.logo, height: 70) %>
             <% end %>
           <% else %>

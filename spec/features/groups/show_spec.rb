@@ -29,8 +29,6 @@ describe 'groups show page' do
     expect(page).to have_content('Comedy, Action')
     expect(page).to have_content('Average Rating: 6.5/10')
     expect(page).to have_content('2349 Total Reviews')
-    expect(page).to have_content('Netflix')
-    expect(page).to have_content('Hulu')
     expect(page).to have_content('Nightcrawler (2014)')
     expect(page).to have_content('Thriller')
     expect(page).to have_content('Average Rating: 7.7/10')
