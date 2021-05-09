@@ -1,0 +1,54 @@
+<div class="discover-marquee">
+  <%= image_tag('pof_discover_link.png', height: 150) %>
+</div>
+
+<div class="movie-display">
+  <div class="movie-title">
+    <h1><%= @movie.title %> (<%= @movie.year %>)</h1>
+  </div>
+
+  <div class="movie-info">
+    <div class="movie-poster">
+      <% if @movie.poster_path %>
+        <%= image_tag("https://image.tmdb.org/t/p/w300/" + @movie.poster_path) %>
+      <% end %>
+    </div>
+
+    <div class="movie-details">
+      <div class="movie-genres">
+        <% if @movie.genres %>
+          <h3>
+            Genres:<br>
+          </h3>
+      </div>
+          <h4>
+            <% @movie.genres.each do |genre| %>
+              <%= genre %><%= ', ' unless genre == @movie.genres.last %>
+            <% end %>
+          </h4>
+        <% end %>
+
+
+      <div class="movie-rating">
+        <h3>Rating:</h3>
+      </div>
+        <h4>
+          <% if @movie.vote_average %>
+            <%= @movie.vote_average %>/10
+          <% else %>
+            --/10
+          <% end %><br>
+          <% if @movie.vote_count %>
+            <%= @movie.vote_count %>
+          <% else %>
+            0
+          <% end %>
+          Total Votes
+        </h4>
+      <div class="movie-description">
+        <h3>Description:</h3>
+      </div>
+        <h4><%= @movie.description %></h4>
+    </div>
+  </div>
+</div>
