@@ -1202,105 +1202,6 @@ http_interactions:
   recorded_at: Sun, 09 May 2021 01:47:17 GMT
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 38a7582c-4e24-4666-9e1e-6e3afea5d084
-      X-Runtime:
-      - '0.004715'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Sun, 09 May 2021 01:52:12 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"9c02675670cbb061cb5c49382d54e24e"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 36f7ad02-5393-465b-ac1b-2d23f7d791fe
-      X-Runtime:
-      - '0.468705'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjp7ImlkIjoiNjg3MiIsInR5cGUiOiJtb3ZpZSIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJMZWdlbmQiLCJ0bWRiX2lkIjoyNjIxMTksInBvc3Rlcl9wYXRoIjoiL2xUcE9BbGlmc1p0V0g4WlY2STNvUjNqR3pTWi5qcGciLCJkZXNjcmlwdGlvbiI6IkxlZ2VuZOKAmXMgKEJhbGFrcmlzaG5hKSBmYW1pbHkgVnMgSml0ZW5kZXLigJlzIChKYWdhcHRoaSBCYWJ1KSBmYW1pbHkuIEppdGVuZGVyIFx1MDAyNiBDbyBiZWxvbmdzIHRvIGNydWVsIGFuZCB3aWNrZWQgcG9saXRpY2FsIGZhbWlseSB3aG8gZG9u4oCZdCBtaW5kIGtpbGxpbmcgcGVvcGxlLiBKaXRlbmRlciB2aXNpdHMgVml6YWcgZm9yIHdlZGRpbmcgbWF0Y2guIE9uIGhpcyByZXR1cm4gdHJpcCwgaGlzIGNhciBhY2NpZGVudGFsbHkgaGl0cyBhbiBvbGQgbWFuIHdoaWNoIGRyYXdzIGZsYWsgZnJvbSBsb2NhbGVzLiBWaWxsYWdlIGhlYWQgU3VtYW4gYXNrcyBKaXRlbmRlciB0byB0ZW5kZXIgYW4gYXBvbG9neSBhbmQgY29tcGVuc2F0aW9uIHRvIHZpY3RpbeKAmXMgZmFtaWx5LiBUYWtpbmcgaXQgYXMgYSBncmVhdCBkaXNyZXNwZWN0LCBmdW1pbmcgSml0ZW5kZXIgdm93cyB0byB0YWtlIHJldmVuZ2UgYWdhaW5zdCBTdW1hbuKAmXMgZmFtaWx5LiBKaXRlbmRlciBraWxscyBTdW1hbiAoTGVnZW5k4oCZcyBmYXRoZXIpIGFuZCBoaXMgd2lmZSBTdWhhc2luaSAoTGVnZW5k4oCZcyBtb3RoZXIpLiBLcmlzaG5hIChCYWxha3Jpc2huYSkgaXMgYW4gTlJJLCB3aG8gZG9lcyBub3QgdG9sZXJhdGUgaW5qdXN0aWNlIGFnYWluc3QgYW55b25lLiBIZSBpcyBpbiBsb3ZlIHdpdGggU25laGEgKFNvbmFsIENoYXVoYW4pLiBUaGUgY291cGxlIGNvbWVzIHRvIEluZGlhIHRvIHNlZWsgaGlzIGdyYW5kbW90aGVyJ3MgYmxlc3NpbmdzIGZvciB0aGVpciB3ZWRkaW5nLiBCdXQgS3Jpc2huYSBsYW5kcyBpbiBhIHByb2JsZW0gd2l0aCBKaXRlbmRyYSB3aG9zZSBzb24gaXMga2lsbGVkIGJ5IEtyaXNobmEgd2hpbGUgc2F2aW5nIGEgcGVyc29uLCBKaXRlbmRyYSB3YW50cyB0byBraWxsIEtyaXNobmEgXHUwMDI2IGhpcyBmYW1pbHkuIFRoZSBjcnV4IG9mIHRoZSBzdG9yeSBpcyB3aGF0IGhhcHBlbnMgbmV4dCBhbmQgaG93IGFuZCB3aG8gc3RvcHMgSml0ZW5kcmEuIiwiZ2VucmVzIjpbeyJpZCI6NCwibmFtZSI6IkFjdGlvbiIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA2LjM5MVoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNi4zOTFaIiwidG1kYl9pZCI6Mjh9LHsiaWQiOjMsIm5hbWUiOiJEcmFtYSIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA1Ljk3OFoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNS45NzhaIiwidG1kYl9pZCI6MTh9LHsiaWQiOjUsIm5hbWUiOiJSb21hbmNlIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MDYuNjQxWiIsInVwZGF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA2LjY0MVoiLCJ0bWRiX2lkIjoxMDc0OX1dLCJ2b3RlX2F2ZXJhZ2UiOjUuMCwidm90ZV9jb3VudCI6NywieWVhciI6IjIwMTQifX19
-  recorded_at: Sun, 09 May 2021 01:52:12 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=6872&rating=0&user_id=1"
     body:
       encoding: UTF-8
@@ -1350,6 +1251,56 @@ http_interactions:
       string: '{"data":{"id":"71","type":"swipe","attributes":{"id":71,"user_id":1,"movie_id":6872,"rating":0}}}'
   recorded_at: Sun, 09 May 2021 01:52:12 GMT
 - request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aa056684-8466-4931-a828-14fb2a4d88a7
+      X-Runtime:
+      - '0.139166'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Sun, 09 May 2021 03:11:22 GMT
+- request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
     body:
@@ -1384,21 +1335,127 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"136a675e755d8b1d4adbb9d480173185"
+      - W/"33dae2dce7a18aed422729361482ad8d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 993318fb-69ef-423f-80a1-8e78ef60919e
+      - ec845bc8-c7b2-4d95-861d-073af697f4ff
       X-Runtime:
-      - '0.403878'
+      - '0.632811'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"6883","type":"movie","attributes":{"title":"The 39 Steps","tmdb_id":260,"poster_path":"/paI9Tmqm2cZG6xy4Tnjw3Ydjuw5.jpg","description":"Richard
-        Hanney has a rude awakening when a glamorous female spy falls into his bed
-        -- with a knife in her back. Having a bit of trouble explaining it all to
-        Scotland Yard, he heads for the hills of Scotland to try to clear his name
-        by locating the spy ring known as \"The 39 Steps.\"","genres":[{"id":13,"name":"Mystery","created_at":"2021-04-17T04:01:08.831Z","updated_at":"2021-04-17T04:01:08.831Z","tmdb_id":9648},{"id":1,"name":"Thriller","created_at":"2021-04-17T04:01:05.640Z","updated_at":"2021-04-17T04:01:05.640Z","tmdb_id":53}],"vote_average":7.4,"vote_count":590,"year":"1935"}}}'
-  recorded_at: Sun, 09 May 2021 01:52:13 GMT
+      string: '{"data":{"id":"3179","type":"movie","attributes":{"title":"A Very Country
+        Christmas","tmdb_id":486982,"poster_path":"/kqEkOqY92UCXujZBzSGyjNAVIjJ.jpg","description":"Jeanette
+        Williams is a busy single parent, trying to make the best life for her and
+        her daughter. With no time to follow current celebrity gossip, Jeanette is
+        unaware of when a Country superstar returns to their small town to escape
+        the intrusive paparazzi and the chaos of fame. A chance meeting between the
+        two have them both letting their guards down and opening their hearts to the
+        possibility of romance.","genres":[{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":18,"name":"TV
+        Movie","created_at":"2021-04-17T04:01:28.545Z","updated_at":"2021-04-17T04:01:28.545Z","tmdb_id":10770},{"id":5,"name":"Romance","created_at":"2021-04-17T04:01:06.641Z","updated_at":"2021-04-17T04:01:06.641Z","tmdb_id":10749}],"vote_average":6.4,"vote_count":34,"year":"2017"}}}'
+  recorded_at: Sun, 09 May 2021 03:11:23 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=3179&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"7dc85f2c6ea865b97eebe7be7f51630d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b293af17-a040-48c1-bb35-96b2d6a80d53
+      X-Runtime:
+      - '0.027540'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"73","type":"swipe","attributes":{"id":73,"user_id":1,"movie_id":3179,"rating":0}}}'
+  recorded_at: Sun, 09 May 2021 03:11:23 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"a2721cccea91102c71dbbb6577313fb2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 03c20c44-3704-4c54-9af2-1429d1ecaa88
+      X-Runtime:
+      - '0.406881'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10831","type":"movie","attributes":{"title":"Big in
+        Japan","tmdb_id":496668,"poster_path":"/kLI0CmOf1osdRQVuLjPCtAyoeRu.jpg","description":"After
+        hearing about the huge demand for foreign talent in Japan, ''ordinary guy''
+        Dave sets out on an outrageous mission to understand fame... by doing whatever
+        it takes to get it.","genres":[{"id":14,"name":"Documentary","created_at":"2021-04-17T04:01:09.079Z","updated_at":"2021-04-17T04:01:09.079Z","tmdb_id":99}],"vote_average":7.0,"vote_count":1,"year":"2018"}}}'
+  recorded_at: Sun, 09 May 2021 03:11:23 GMT
 recorded_with: VCR 6.0.0
