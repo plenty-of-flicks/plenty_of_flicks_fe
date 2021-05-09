@@ -100,6 +100,12 @@ class BackendService
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.get_movie_details(id)
+    response = conn.get("/api/v1/movies/#{id}")
+
+    json = JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.conn
     Faraday.new(url: ENV['POF_BE'])
   end
