@@ -902,110 +902,6 @@ http_interactions:
   recorded_at: Fri, 07 May 2021 21:50:57 GMT
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - e0b555e5-c120-46dc-95e5-3314c4ac6c55
-      X-Runtime:
-      - '0.003924'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Fri, 07 May 2021 21:51:30 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"fb3c7e0c86d9ef01ad532967529e3912"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 13222bd9-0495-42e7-820f-a85e25909dc4
-      X-Runtime:
-      - '0.376525'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"8866","type":"movie","attributes":{"title":"The Happiness
-        of the Katakuris","tmdb_id":16184,"poster_path":"/dMOaB1N5LASSiE0q6y51YWKy8Nn.jpg","description":"The
-        Katakuri family has just opened their guest house in the mountains. Unfortunately
-        their first guest commits suicide and in order to avoid trouble they decide
-        to bury him in the backyard. Things get way more complicated when their second
-        guest, a famous sumo wrestler, dies while having sex with his underage girlfriend
-        and the grave behind the house starts to fill up more and more.","genres":[{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35},{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":12,"name":"Horror","created_at":"2021-04-17T04:01:08.820Z","updated_at":"2021-04-17T04:01:08.820Z","tmdb_id":27}],"vote_average":7.2,"vote_count":116,"year":"2002"}}}'
-  recorded_at: Fri, 07 May 2021 21:51:30 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=8866&rating=0&user_id=1"
     body:
       encoding: UTF-8
@@ -1055,6 +951,56 @@ http_interactions:
       string: '{"data":{"id":"59","type":"swipe","attributes":{"id":59,"user_id":1,"movie_id":8866,"rating":0}}}'
   recorded_at: Fri, 07 May 2021 21:51:30 GMT
 - request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 05ba2c6b-262a-4c02-88ed-356e2a4930a8
+      X-Runtime:
+      - '0.586888'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Sun, 09 May 2021 00:26:31 GMT
+- request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
     body:
@@ -1089,22 +1035,129 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"2954db54558afcbcaf2365e0b8f5ba96"
+      - W/"25a549bdb3ad0816b23e15343c5cab38"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1d10c779-7b98-4b0b-a31b-16d3984f8904
+      - 5cfbd7c1-a7d0-43f6-9a67-0cf6df8cd0c0
       X-Runtime:
-      - '0.388801'
+      - '0.549534'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"9246","type":"movie","attributes":{"title":"Reach","tmdb_id":530180,"poster_path":"/cn4teu1ESNrBRAexNHHCJ8za37q.jpg","description":"A
-        socially awkward band geek, Steven Turano, is planning on killing himself.
-        However, when Clarence, the new quirky kid in school, befriends him, Steven''s
-        plans are sidetracked and he reaches beyond his comfort zone forming stronger
-        relationships with his father, friends and teachers. The boys form an inseparable
-        bond as Clarence finds creative ways to pull Steven out of his depression.","genres":[{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35},{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18}],"vote_average":6.9,"vote_count":4,"year":"2018"}}}'
-  recorded_at: Fri, 07 May 2021 21:51:31 GMT
+      string: '{"data":{"id":"6019","type":"movie","attributes":{"title":"Marrying
+        the Mafia 2","tmdb_id":49203,"poster_path":"/hEcQWLiJ5E1eL8p5Ok8rJr7A7WK.jpg","description":"The
+        oldest son of the White Tiger Gang is pressured by his family to settle down
+        and get married; but when he finds the perfect girl, she turns out to be a
+        state prosecutor for crimes of violence, specifically gangster related. The
+        district attorney is a look-a-like of the gangster''s former fiancee who died
+        getting hit by a truck. Their feelings develop for each other but her co-worker
+        turns out to like her as well. She does not like him so the latter turns to
+        the darker side of the law, by conspiring with the rival Axe Gang. Unfortunately
+        for him, the mafia son has more that a few tricks up his sleeve and gets support
+        from his dim-witted brothers and henchman.","genres":[{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35},{"id":2,"name":"Crime","created_at":"2021-04-17T04:01:05.930Z","updated_at":"2021-04-17T04:01:05.930Z","tmdb_id":80},{"id":4,"name":"Action","created_at":"2021-04-17T04:01:06.391Z","updated_at":"2021-04-17T04:01:06.391Z","tmdb_id":28},{"id":5,"name":"Romance","created_at":"2021-04-17T04:01:06.641Z","updated_at":"2021-04-17T04:01:06.641Z","tmdb_id":10749}],"vote_average":6.2,"vote_count":7,"year":"2005"}}}'
+  recorded_at: Sun, 09 May 2021 00:26:32 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=6019&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"097eb9d73be5ed1a12686d98324f3b60"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7cdd7056-3eb7-4234-ade9-1f6e34291d7a
+      X-Runtime:
+      - '0.020499'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"61","type":"swipe","attributes":{"id":61,"user_id":1,"movie_id":6019,"rating":0}}}'
+  recorded_at: Sun, 09 May 2021 00:26:32 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"3027a9b9885ba788aca730d26027b820"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c6ad94c6-97e0-435e-a0ed-e12db7887d29
+      X-Runtime:
+      - '0.410691'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"10221","type":"movie","attributes":{"title":"I Capture
+        the Castle","tmdb_id":17920,"poster_path":"/oxcFmQJLPwFM8qMAzcbAYWuWqfJ.jpg","description":"A
+        love story set in 1930s England that follows 17-year-old Cassandra Mortmain,
+        and the fortunes of her eccentric family, struggling to survive in a decaying
+        English castle. Based on Dodie Smith''s 1948 novel with the same name.","genres":[{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":5,"name":"Romance","created_at":"2021-04-17T04:01:06.641Z","updated_at":"2021-04-17T04:01:06.641Z","tmdb_id":10749}],"vote_average":6.9,"vote_count":53,"year":"2003"}}}'
+  recorded_at: Sun, 09 May 2021 00:26:32 GMT
 recorded_with: VCR 6.0.0
