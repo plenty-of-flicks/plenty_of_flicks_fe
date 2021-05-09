@@ -94,6 +94,12 @@ class BackendService
     json = JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.get_match_details(id)
+    response = conn.get("/api/v1/groups/#{id}/matches")
+
+    json = JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.conn
     Faraday.new(url: ENV['POF_BE'])
   end
