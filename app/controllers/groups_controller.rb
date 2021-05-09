@@ -7,6 +7,7 @@ class GroupsController < ApplicationController
 
   def show
     @group = GroupFacade.find_group(params[:id])
+    @matches = GroupFacade.find_matches(params[:id])
   end
 
   def all
