@@ -290,3 +290,22 @@ body {
   border-radius: 40px;
   box-shadow: 1.5px 4px #363631;
 }
+
+.matchlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.match-info {
+  background: white;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  width: 200px;
+}
