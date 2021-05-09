@@ -1202,110 +1202,6 @@ http_interactions:
   recorded_at: Sun, 09 May 2021 01:52:13 GMT
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 126a87a4-60bd-4e9c-a122-757d555fd2da
-      X-Runtime:
-      - '0.005165'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Sun, 09 May 2021 03:11:23 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"3a4db7cceda195a4f6b5177467fda3d5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 675e578c-f9e5-4184-8f0f-8d6b1278ac37
-      X-Runtime:
-      - '0.445585'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"10346","type":"movie","attributes":{"title":"Up On The
-        Glass","tmdb_id":732659,"poster_path":"/cUgCwMvo2DwEDfSHd7GMqOVgusx.jpg","description":"A
-        wanderer named Jack DiMercurio secretly desires the life and wife of his more
-        affluent friend, Andy Shelton. Past tensions resurface between the two men
-        during an informal reunion at Andy''s cottage on Lake Michigan. One heinous
-        act allows Jack to draw close to Andy''s wife Liz, but Jack finds living Andy''s
-        life is a dangerous lie.","genres":[{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":1,"name":"Thriller","created_at":"2021-04-17T04:01:05.640Z","updated_at":"2021-04-17T04:01:05.640Z","tmdb_id":53}],"vote_average":7.0,"vote_count":2,"year":"2020"}}}'
-  recorded_at: Sun, 09 May 2021 03:11:24 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=10346&rating=1&user_id=1"
     body:
       encoding: UTF-8
@@ -1355,6 +1251,56 @@ http_interactions:
       string: '{"data":{"id":"74","type":"swipe","attributes":{"id":74,"user_id":1,"movie_id":10346,"rating":1}}}'
   recorded_at: Sun, 09 May 2021 03:11:24 GMT
 - request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9360079e-d72f-4b2b-98ea-84e5394e7783
+      X-Runtime:
+      - '0.004804'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Sun, 09 May 2021 06:17:33 GMT
+- request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
     body:
@@ -1389,20 +1335,119 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"30657a854a018c62a53b60346bc66b2a"
+      - W/"ad2c777bc18f4cf9a6e33a8d515de252"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b113ef55-b290-4343-b6fc-08b2a4ff74b3
+      - 940dd9cf-e5b5-47bb-8e0a-7e49e9087bad
       X-Runtime:
-      - '0.407759'
+      - '0.389965'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1157","type":"movie","attributes":{"title":"Nigerian
-        Prince","tmdb_id":520335,"poster_path":"/AppWbz91CqEAQACoMdYWOtYV32W.jpg","description":"After
-        being sent to Nigeria against his will, a stubborn Nigerian-American teenager,
-        joins forces with an internet scammer, in order to return to the United States.","genres":[{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":1,"name":"Thriller","created_at":"2021-04-17T04:01:05.640Z","updated_at":"2021-04-17T04:01:05.640Z","tmdb_id":53}],"vote_average":5.3,"vote_count":7,"year":"2018"}}}'
-  recorded_at: Sun, 09 May 2021 03:11:24 GMT
+      string: '{"data":{"id":"2031","type":"movie","attributes":{"title":"The Plane
+        Tree","tmdb_id":67077,"poster_path":"/e6007bhIf2i9kEBW7tvtWGykh12.jpg","description":"A
+        matriarch and her grandson forge a special bond during family picnics every
+        two months, until her health causes a conflict among the relatives.","genres":[{"id":16,"name":"Family","created_at":"2021-04-17T04:01:18.392Z","updated_at":"2021-04-17T04:01:18.392Z","tmdb_id":10751},{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35}],"vote_average":5.9,"vote_count":10,"year":"2011"}}}'
+  recorded_at: Sun, 09 May 2021 06:17:34 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=2031&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"03384a39326bce22bc4b57ea8ae0d9ac"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 816f49bb-6d3b-4bfd-b83f-d037a003e477
+      X-Runtime:
+      - '0.008528'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"79","type":"swipe","attributes":{"id":79,"user_id":1,"movie_id":2031,"rating":1}}}'
+  recorded_at: Sun, 09 May 2021 06:17:34 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"57271739a343eec13fdd94b4b7f055e8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1895eb14-02af-4766-9960-319f7a6e8b61
+      X-Runtime:
+      - '0.353106'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiNzQ5NSIsInR5cGUiOiJtb3ZpZSIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJOb3VzIFlvcmsiLCJ0bWRiX2lkIjoxNDE1ODEsInBvc3Rlcl9wYXRoIjoiL3RleExRanE2bWdHa0toUjdrUmNvcVdueTdUWS5qcGciLCJkZXNjcmlwdGlvbiI6IlRoaXJ0eS1zb21ldGhpbmdzIE1pY2hhw6tsLCBOYWJpbCBhbmQgU3lsdmFpbiBoZWFkIHRvIE5ldyBZb3JrIHRvIHN1cnByaXNlIHRoZWlyIGZyaWVuZCBTYW1pYSBvbiBoZXIgYmlydGhkYXksIHNlY3JldGx5IGFycmFuZ2VkIHdpdGggdGhlIGhlbHAgb2YgYW5vdGhlciBmcmllbmQsIEdhYnJpZWxsZS4gVGhlIHR3byB3b21lbiBoYWQgbW92ZWQgdG8gTllDIHR3byB5ZWFycyBwcmV2aW91c2x5IHRvIHRyeSB0aGVpciBsdWNrLiBTYW1pYSBzaGFyZXMgYSBmYWJ1bG91cyBsb2Z0IHdpdGggYSByZW5vd25lZCBBbWVyaWNhbiBhY3RyZXNzIGFuZCB3b3JrcyBhcyBoZXIgYXNzaXN0YW50LiBHYWJyaWVsbGUgaGFzIGEgbW9yZSBtdW5kYW5lIGpvYiBpbiBhIHNtYWxsIHJldGlyZW1lbnQgaG9tZS4gVHJhbnNwb3NlZCB0byBOZXcgWW9yaywgdGhlIGNsb3NlIGJvbmRzIGZvcm1lZCBvdmVyIHRoZSB5ZWFycyBiZXR3ZWVuIHRoZSBmaXZlIGZyaWVuZHMgZnJvbSBhIGhvdXNpbmcgcHJvamVjdCBvbiB0aGUgb3V0c2tpcnRzIG9mIFBhcmlzIHRha2Ugb24gYSBkaWZmZXJlbnQgYXNwZWN0LiBUaGUgbGF1Z2h0ZXIgYW5kIGVtb3Rpb24gaXMgZGljdGF0ZWQgYnkgdGhlIGFkdmVudHVyZXMgdGhleSBzaGFyZSBkdXJpbmcgdGhlaXIgc3RheSwgZnJvbSB0aGUgZGFpbHkgbGl2ZXMgb2YgdGhlIHdvbWVuIHRvIHRoZSBkaXNjb3Zlcnkgb2YgdGhpcyBjdWx0IGNpdHkuIiwiZ2VucmVzIjpbeyJpZCI6OSwibmFtZSI6IkNvbWVkeSIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA3LjQ2OVoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNy40NjlaIiwidG1kYl9pZCI6MzV9XSwidm90ZV9hdmVyYWdlIjo0LjcsInZvdGVfY291bnQiOjIwOCwieWVhciI6IjIwMTIifX19
+  recorded_at: Sun, 09 May 2021 06:17:34 GMT
 recorded_with: VCR 6.0.0

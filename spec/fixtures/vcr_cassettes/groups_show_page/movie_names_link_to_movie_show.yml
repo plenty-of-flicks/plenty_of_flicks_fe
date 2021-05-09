@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9244c042-6868-478f-9dec-205dc71b9dcb
+      X-Runtime:
+      - '0.004878'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Sun, 09 May 2021 03:22:13 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/480"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"22a68d715051561d90fbb13708df62c4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9878826c-3dde-4f76-a71d-9e6158aab507
+      X-Runtime:
+      - '0.012016'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"480","type":"movie","attributes":{"title":"Race","tmdb_id":19658,"poster_path":"/krMI3hRmlgKcuNc3XBWtl8APasR.jpg","description":"Ranvir
+        and Rajiv are half brothers who own a huge stud farm in South Africa. Ranvir
+        is a very shrewd and aggressive man while Rajiv is laid back, and a chronic
+        alcoholic. Sophia, Ranvir''s personal secretary adores and loves him. Ranvir
+        is unaware of her feelings. Shaina, an Indian ramp model in Durban loves Ranvir
+        but through a twist of fate gets married to his younger brother Rajiv. When
+        she discovers that Rajiv is a chronic alcoholic, her world is shattered. Ranvir
+        too is disturbed as he has sacrificed his love for his younger brother because
+        Rajiv had promised to leave alcohol for good if he marries Shaina. In a weak
+        moment Ranvir and Shaina come very close to each other. When Rajiv starts
+        suspecting, all hell breaks loose. A murder is committed, a contract killing
+        is issued. A sharp tongued detective R.D., getting wise on the proceedings,
+        starts an intriguing investigation with his brainless bimbo assistant Mini","genres":[{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":4,"name":"Action","created_at":"2021-04-17T04:01:06.391Z","updated_at":"2021-04-17T04:01:06.391Z","tmdb_id":28},{"id":1,"name":"Thriller","created_at":"2021-04-17T04:01:05.640Z","updated_at":"2021-04-17T04:01:05.640Z","tmdb_id":53},{"id":2,"name":"Crime","created_at":"2021-04-17T04:01:05.930Z","updated_at":"2021-04-17T04:01:05.930Z","tmdb_id":80}],"vote_average":6.3,"vote_count":75,"year":"2008"}}}'
+  recorded_at: Sun, 09 May 2021 03:22:13 GMT
+recorded_with: VCR 6.0.0
