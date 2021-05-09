@@ -90,6 +90,10 @@ describe 'groups index page' do
     x_men_show_path = ENV['POF_BE'] + '/api/v1/groups/159'
     stub_request(:get, x_men_show_path).to_return(status: 200, body: x_men_response)
 
+    x_men_matches_response = JSON.parse(File.read('spec/fixtures/groups/show/x_men_matches.json'), symbolize_names:true)
+    x_men_matches_path = ENV['POF_BE'] + '/api/v1/groups/159/matches'
+    stub_request(:get, x_men_matches_path).to_return(status: 200, body: x_men_matches_response)
+
     visit google_login_path
 
     visit groups_path
