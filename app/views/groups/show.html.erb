@@ -24,7 +24,7 @@
     <div class="matchlist">
       <% match_slice.each do |match| %>
         <div class="match-info">
-        <h4><%= "#{match.title} (#{match.year})" %></h4>
+        <h4><%= link_to "#{match.title} (#{match.year})", movie_path(match.id) %></h4>
           <% if match.poster_path %>
             <%= image_tag("https://image.tmdb.org/t/p/w200/" + match.poster_path) %>
           <% end %>
