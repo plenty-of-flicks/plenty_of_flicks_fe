@@ -902,110 +902,6 @@ http_interactions:
   recorded_at: Fri, 07 May 2021 21:50:57 GMT
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - e0b555e5-c120-46dc-95e5-3314c4ac6c55
-      X-Runtime:
-      - '0.003924'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Fri, 07 May 2021 21:51:30 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"fb3c7e0c86d9ef01ad532967529e3912"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 13222bd9-0495-42e7-820f-a85e25909dc4
-      X-Runtime:
-      - '0.376525'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"8866","type":"movie","attributes":{"title":"The Happiness
-        of the Katakuris","tmdb_id":16184,"poster_path":"/dMOaB1N5LASSiE0q6y51YWKy8Nn.jpg","description":"The
-        Katakuri family has just opened their guest house in the mountains. Unfortunately
-        their first guest commits suicide and in order to avoid trouble they decide
-        to bury him in the backyard. Things get way more complicated when their second
-        guest, a famous sumo wrestler, dies while having sex with his underage girlfriend
-        and the grave behind the house starts to fill up more and more.","genres":[{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35},{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":12,"name":"Horror","created_at":"2021-04-17T04:01:08.820Z","updated_at":"2021-04-17T04:01:08.820Z","tmdb_id":27}],"vote_average":7.2,"vote_count":116,"year":"2002"}}}'
-  recorded_at: Fri, 07 May 2021 21:51:30 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=8866&rating=0&user_id=1"
     body:
       encoding: UTF-8
@@ -1055,6 +951,406 @@ http_interactions:
       string: '{"data":{"id":"59","type":"swipe","attributes":{"id":59,"user_id":1,"movie_id":8866,"rating":0}}}'
   recorded_at: Fri, 07 May 2021 21:51:30 GMT
 - request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=6019&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"097eb9d73be5ed1a12686d98324f3b60"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7cdd7056-3eb7-4234-ade9-1f6e34291d7a
+      X-Runtime:
+      - '0.020499'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"61","type":"swipe","attributes":{"id":61,"user_id":1,"movie_id":6019,"rating":0}}}'
+  recorded_at: Sun, 09 May 2021 00:26:32 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=2261&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8659c684a2f4b4dd1d63d4897cc7db06"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '08524a7a-b144-4ff8-adf0-8d6b146059ff'
+      X-Runtime:
+      - '0.026008'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"63","type":"swipe","attributes":{"id":63,"user_id":1,"movie_id":2261,"rating":0}}}'
+  recorded_at: Sun, 09 May 2021 01:43:24 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=4982&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"003b855171b310e6a37d7f8f94b4f897"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 127f998c-29d3-4490-9bef-51af82f5d260
+      X-Runtime:
+      - '0.011131'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"65","type":"swipe","attributes":{"id":65,"user_id":1,"movie_id":4982,"rating":0}}}'
+  recorded_at: Sun, 09 May 2021 01:44:49 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=6566&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"3052c378f28c71c9be5b76364e7c3524"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - adc2a11a-01b1-4569-949e-439c74063891
+      X-Runtime:
+      - '0.022175'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"67","type":"swipe","attributes":{"id":67,"user_id":1,"movie_id":6566,"rating":0}}}'
+  recorded_at: Sun, 09 May 2021 01:45:49 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=889&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"c94b04474da7d59c8f7fd6682e2b0424"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d13ce794-d5f9-45b5-854e-6d623c146a08
+      X-Runtime:
+      - '0.007584'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"69","type":"swipe","attributes":{"id":69,"user_id":1,"movie_id":889,"rating":0}}}'
+  recorded_at: Sun, 09 May 2021 01:47:17 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=6872&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"5326ef1370a7565bf2fcfaf6e5a53a8d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 74ad89e8-b87e-432c-bfd6-eac95df61a38
+      X-Runtime:
+      - '0.011646'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"71","type":"swipe","attributes":{"id":71,"user_id":1,"movie_id":6872,"rating":0}}}'
+  recorded_at: Sun, 09 May 2021 01:52:12 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=3179&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"7dc85f2c6ea865b97eebe7be7f51630d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b293af17-a040-48c1-bb35-96b2d6a80d53
+      X-Runtime:
+      - '0.027540'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"73","type":"swipe","attributes":{"id":73,"user_id":1,"movie_id":3179,"rating":0}}}'
+  recorded_at: Sun, 09 May 2021 03:11:23 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b88e41cf-164c-444d-b7c6-b61c451589fe
+      X-Runtime:
+      - '0.010024'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Sun, 09 May 2021 06:17:33 GMT
+- request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
     body:
@@ -1089,22 +1385,126 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"2954db54558afcbcaf2365e0b8f5ba96"
+      - W/"98ab3c9061e2b802a7d824dc7b2a4314"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1d10c779-7b98-4b0b-a31b-16d3984f8904
+      - 48ea6648-ad70-4cb2-b90e-4a614f504833
       X-Runtime:
-      - '0.388801'
+      - '0.361833'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"9246","type":"movie","attributes":{"title":"Reach","tmdb_id":530180,"poster_path":"/cn4teu1ESNrBRAexNHHCJ8za37q.jpg","description":"A
-        socially awkward band geek, Steven Turano, is planning on killing himself.
-        However, when Clarence, the new quirky kid in school, befriends him, Steven''s
-        plans are sidetracked and he reaches beyond his comfort zone forming stronger
-        relationships with his father, friends and teachers. The boys form an inseparable
-        bond as Clarence finds creative ways to pull Steven out of his depression.","genres":[{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35},{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18}],"vote_average":6.9,"vote_count":4,"year":"2018"}}}'
-  recorded_at: Fri, 07 May 2021 21:51:31 GMT
+      string: '{"data":{"id":"7841","type":"movie","attributes":{"title":"Piranha","tmdb_id":48374,"poster_path":"/sUzAJwxeGiODOVmsIGrgXcy9aj1.jpg","description":"Doctor
+        Baines has been conducting genetic experiments on piranhas and has made them
+        virtually unstoppable. Unfortunately, his assistants, Maggie and Paul, accidentally
+        release the hybrids into the Lost River Lake threatening to destroy everyone
+        in their path. Can they prevent the flesh-eating piranhas from escaping into
+        the ocean and spawning?","genres":[{"id":12,"name":"Horror","created_at":"2021-04-17T04:01:08.820Z","updated_at":"2021-04-17T04:01:08.820Z","tmdb_id":27},{"id":18,"name":"TV
+        Movie","created_at":"2021-04-17T04:01:28.545Z","updated_at":"2021-04-17T04:01:28.545Z","tmdb_id":10770}],"vote_average":4.3,"vote_count":53,"year":"1995"}}}'
+  recorded_at: Sun, 09 May 2021 06:17:33 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=7841&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"cc1e9b3aef0f301657e587fcd961fd12"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2be4a6c1-70c8-443a-969b-466e180d05c0
+      X-Runtime:
+      - '0.024308'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"78","type":"swipe","attributes":{"id":78,"user_id":1,"movie_id":7841,"rating":0}}}'
+  recorded_at: Sun, 09 May 2021 06:17:33 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"0274524e250af181d622e283d3850c71"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a7d5b425-b40c-4be9-af80-61e40269b2ac
+      X-Runtime:
+      - '0.366081'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"12876","type":"movie","attributes":{"title":"The Old
+        Man and the Sea","tmdb_id":79775,"poster_path":"/tlX71ziFH52SecHM3pdVcFj3Tbr.jpg","description":"Based
+        on the novel by Ernest Hemingway. Santiago goes out on his usual fishing trip
+        and makes a huge catch, the biggest of his life. Then a shark attacks and
+        tries to steal his catch.","genres":[{"id":4,"name":"Action","created_at":"2021-04-17T04:01:06.391Z","updated_at":"2021-04-17T04:01:06.391Z","tmdb_id":28},{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":18,"name":"TV
+        Movie","created_at":"2021-04-17T04:01:28.545Z","updated_at":"2021-04-17T04:01:28.545Z","tmdb_id":10770}],"vote_average":6.1,"vote_count":16,"year":"1990"}}}'
+  recorded_at: Sun, 09 May 2021 06:17:33 GMT
 recorded_with: VCR 6.0.0

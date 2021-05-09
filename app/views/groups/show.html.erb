@@ -17,3 +17,39 @@
     </div>
   <% end %>
 </div>
+
+<div class="matches-section">
+  <h1>Movie Matches for <%= @group.name %></h1>
+  <% @matches.each_slice(4) do |match_slice| %>
+    <div class="matchlist">
+      <% match_slice.each do |match| %>
+        <div class="match-info">
+        <h4><%= link_to "#{match.title} (#{match.year})", movie_path(match.id) %></h4>
+          <% if match.poster_path %>
+            <%= image_tag("https://image.tmdb.org/t/p/w200/" + match.poster_path) %>
+          <% end %>
+          <% if match.genres %>
+            <h4>
+              Genres:<br>
+            </h4>
+            <p>
+              <% match.genres.each do |genre| %>
+                <%= genre %><%= ', ' unless genre == match.genres.last %>
+              <% end %>
+            </p>
+          <% end %>
+          <p><%= "Average Rating: #{match.vote_average}/10" %></p>
+          <p><%= "#{match.vote_count} Total Reviews" %></p>
+          <h4>Currently Available On:</h4>
+          <% if match.services %>
+            <% match.services.each do |service| %>
+              <%= image_tag(service.logo, height: 70) %>
+            <% end %>
+          <% else %>
+            <p>Not currently available on Netflix, Hulu, or Amazon Prime Video :(</p>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

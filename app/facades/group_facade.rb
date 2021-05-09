@@ -35,4 +35,11 @@ class GroupFacade
     end
     group = Group.new(group_data, group_members)
   end
+
+  def self.find_matches(id)
+    matches_data = BackendService.get_match_details(id)
+    matches_data[:data].map do |match_data|
+      Match.new(match_data)
+    end
+  end
 end

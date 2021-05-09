@@ -27,6 +27,10 @@ describe 'groups new page' do
     group_details = ENV['POF_BE'] + '/api/v1/groups/166'
     stub_request(:get, group_details).to_return(status: 200, body: group_show_json_response)
 
+    matches_response = JSON.parse(File.read('spec/fixtures/groups/show/no_matches.json'), symbolize_names:true)
+    matches_path = ENV['POF_BE'] + '/api/v1/groups/166/matches'
+    stub_request(:get, matches_path).to_return(status: 200, body: matches_response)
+
     visit google_login_path
 
     visit new_group_path
