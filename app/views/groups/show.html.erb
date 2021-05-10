@@ -3,8 +3,8 @@
 </div>
 
 <div class="groups-section">
-  <h2><%= @group.name %></h2>
-  <h3>Members:</h3>
+  <h1><%= @group.name %></h1>
+  <h2>Members:</h2>
   <% @group.users.each_slice(3) do |user_slice| %>
     <div class="groupslist">
       <% user_slice.each do |user| %>
@@ -19,7 +19,7 @@
 </div>
 
 <div class="matches-section">
-  <h1>Movie Matches for <%= @group.name %></h1>
+  <h2>Movie Matches for <%= @group.name %></h2>
   <% @matches.each_slice(4) do |match_slice| %>
     <div class="matchlist">
       <% match_slice.each do |match| %>
