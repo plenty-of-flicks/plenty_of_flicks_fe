@@ -4,7 +4,7 @@
 
 <div class="friends-section">
   <% if @friends != [] %>
-    <h2>Top Three</h2>
+    <h1>Your Friends</h1>
     <div class="friendslist">
       <% @friends.each do |friend| %>
         <div class="friend-info">
@@ -23,14 +23,14 @@
 </div>
 
 <div class="friends-section">
-  <h2>Add a Friend</h2>
+  <h1>Add a Friend</h1>
   <h4>
     Enter a registered user's email below to add them as your friend.
   </h4>
   <div class="friends-creation">
     <%= form_with(url: friends_path, method: :post) do |f| %>
-      <h3><%= f.label('Email') %>
-      <%= f.text_field :email %></h3>
+      <h4><%= f.label('Email') %>
+      <%= f.text_field :email %></h4>
 
       <%= submit_tag("Add Friend") %>
     <% end %>

@@ -1252,107 +1252,6 @@ http_interactions:
   recorded_at: Sun, 09 May 2021 03:11:24 GMT
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 9360079e-d72f-4b2b-98ea-84e5394e7783
-      X-Runtime:
-      - '0.004804'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Sun, 09 May 2021 06:17:33 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"ad2c777bc18f4cf9a6e33a8d515de252"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 940dd9cf-e5b5-47bb-8e0a-7e49e9087bad
-      X-Runtime:
-      - '0.389965'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"2031","type":"movie","attributes":{"title":"The Plane
-        Tree","tmdb_id":67077,"poster_path":"/e6007bhIf2i9kEBW7tvtWGykh12.jpg","description":"A
-        matriarch and her grandson forge a special bond during family picnics every
-        two months, until her health causes a conflict among the relatives.","genres":[{"id":16,"name":"Family","created_at":"2021-04-17T04:01:18.392Z","updated_at":"2021-04-17T04:01:18.392Z","tmdb_id":10751},{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18},{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35}],"vote_average":5.9,"vote_count":10,"year":"2011"}}}'
-  recorded_at: Sun, 09 May 2021 06:17:34 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=2031&rating=1&user_id=1"
     body:
       encoding: UTF-8
@@ -1402,6 +1301,106 @@ http_interactions:
       string: '{"data":{"id":"79","type":"swipe","attributes":{"id":79,"user_id":1,"movie_id":2031,"rating":1}}}'
   recorded_at: Sun, 09 May 2021 06:17:34 GMT
 - request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=6700&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"03fcea5afcb5d638bc6e816882c0f44d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f1e42f0e-81ff-458e-8cf1-78704ad0d93c
+      X-Runtime:
+      - '0.008108'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"81","type":"swipe","attributes":{"id":81,"user_id":1,"movie_id":6700,"rating":1}}}'
+  recorded_at: Sun, 09 May 2021 08:51:26 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9e187a61-4a7a-45b5-8f25-cbd95dcb3191
+      X-Runtime:
+      - '0.003704'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Mon, 10 May 2021 03:49:03 GMT
+- request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
     body:
@@ -1436,18 +1435,120 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"57271739a343eec13fdd94b4b7f055e8"
+      - W/"d1be7dfe1f6d14b7f42a3d8d1d501ad8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1895eb14-02af-4766-9960-319f7a6e8b61
+      - 946cc93b-971f-4371-9d87-d845241d2c23
       X-Runtime:
-      - '0.353106'
+      - '0.398809'
       Transfer-Encoding:
       - chunked
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJkYXRhIjp7ImlkIjoiNzQ5NSIsInR5cGUiOiJtb3ZpZSIsImF0dHJpYnV0ZXMiOnsidGl0bGUiOiJOb3VzIFlvcmsiLCJ0bWRiX2lkIjoxNDE1ODEsInBvc3Rlcl9wYXRoIjoiL3RleExRanE2bWdHa0toUjdrUmNvcVdueTdUWS5qcGciLCJkZXNjcmlwdGlvbiI6IlRoaXJ0eS1zb21ldGhpbmdzIE1pY2hhw6tsLCBOYWJpbCBhbmQgU3lsdmFpbiBoZWFkIHRvIE5ldyBZb3JrIHRvIHN1cnByaXNlIHRoZWlyIGZyaWVuZCBTYW1pYSBvbiBoZXIgYmlydGhkYXksIHNlY3JldGx5IGFycmFuZ2VkIHdpdGggdGhlIGhlbHAgb2YgYW5vdGhlciBmcmllbmQsIEdhYnJpZWxsZS4gVGhlIHR3byB3b21lbiBoYWQgbW92ZWQgdG8gTllDIHR3byB5ZWFycyBwcmV2aW91c2x5IHRvIHRyeSB0aGVpciBsdWNrLiBTYW1pYSBzaGFyZXMgYSBmYWJ1bG91cyBsb2Z0IHdpdGggYSByZW5vd25lZCBBbWVyaWNhbiBhY3RyZXNzIGFuZCB3b3JrcyBhcyBoZXIgYXNzaXN0YW50LiBHYWJyaWVsbGUgaGFzIGEgbW9yZSBtdW5kYW5lIGpvYiBpbiBhIHNtYWxsIHJldGlyZW1lbnQgaG9tZS4gVHJhbnNwb3NlZCB0byBOZXcgWW9yaywgdGhlIGNsb3NlIGJvbmRzIGZvcm1lZCBvdmVyIHRoZSB5ZWFycyBiZXR3ZWVuIHRoZSBmaXZlIGZyaWVuZHMgZnJvbSBhIGhvdXNpbmcgcHJvamVjdCBvbiB0aGUgb3V0c2tpcnRzIG9mIFBhcmlzIHRha2Ugb24gYSBkaWZmZXJlbnQgYXNwZWN0LiBUaGUgbGF1Z2h0ZXIgYW5kIGVtb3Rpb24gaXMgZGljdGF0ZWQgYnkgdGhlIGFkdmVudHVyZXMgdGhleSBzaGFyZSBkdXJpbmcgdGhlaXIgc3RheSwgZnJvbSB0aGUgZGFpbHkgbGl2ZXMgb2YgdGhlIHdvbWVuIHRvIHRoZSBkaXNjb3Zlcnkgb2YgdGhpcyBjdWx0IGNpdHkuIiwiZ2VucmVzIjpbeyJpZCI6OSwibmFtZSI6IkNvbWVkeSIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA3LjQ2OVoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNy40NjlaIiwidG1kYl9pZCI6MzV9XSwidm90ZV9hdmVyYWdlIjo0LjcsInZvdGVfY291bnQiOjIwOCwieWVhciI6IjIwMTIifX19
-  recorded_at: Sun, 09 May 2021 06:17:34 GMT
+        eyJkYXRhIjp7ImlkIjoiMTExNjciLCJ0eXBlIjoibW92aWUiLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiQ29pbiBMb2NrZXIgR2lybCIsInRtZGJfaWQiOjMzNjc0NCwicG9zdGVyX3BhdGgiOiIvNjY3NVFTTGVxY0FqTXhoNzRNUW9xR3V5V3UzLmpwZyIsImRlc2NyaXB0aW9uIjoiQSBjaGlsZCBhYmFuZG9uZWQgaW4gYSBzdWJ3YXkgY29pbiBsb2NrZXIgaXMgc29sZCB0byBhIHJ1dGhsZXNzIGFuZCBjYWxjdWxhdGluZyBsb2FuIHNoYXJrIGFuZCBnYW5nc3RlciBib3NzIGR1YmJlZCDigJxNb3RoZXLigJ0gKEtpbSBIeWUtc29vKSwgd2hvIHJ1bnMgYW4gb3JnYW4taGFydmVzdGluZyByaW5nIGluIEluY2hlb27igJlzIENoaW5hdG93bi4gTmFtZWQgSWwtWW91bmcgKEtpbSBHby1FdW4pLCB0aGUgYmFieSBnaXJsIGdyb3dzIGludG8gTW90aGVy4oCZcyBsb3lhbCByaWdodC1oYW5kIGVuZm9yY2VyIGFuZCBpcyBncm9vbWVkIHRvIGJlIGhlciBldmVudHVhbCBzdWNjZXNzb3IuIEJ1dCB3aGVuIElsLVlvdW5n4oCZcyBsb3lhbHR5IHRvIE1vdGhlciB3YXZlcnMsIHRoZSBjbGFzaCBiZXR3ZWVuIHRoZSB0d28gdW5sZWFzaGVzIGEgbWVyY2lsZXNzIHRpZGFsIHdhdmUgb2YgYmxvb2Qtc29ha2VkIHJldHJpYnV0aW9uIGFuZCBzdHJpZmUuIiwiZ2VucmVzIjpbeyJpZCI6MywibmFtZSI6IkRyYW1hIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MDUuOTc4WiIsInVwZGF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA1Ljk3OFoiLCJ0bWRiX2lkIjoxOH0seyJpZCI6MSwibmFtZSI6IlRocmlsbGVyIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MDUuNjQwWiIsInVwZGF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA1LjY0MFoiLCJ0bWRiX2lkIjo1M31dLCJ2b3RlX2F2ZXJhZ2UiOjYuOCwidm90ZV9jb3VudCI6NzIsInllYXIiOiIyMDE1In19fQ==
+  recorded_at: Mon, 10 May 2021 03:49:03 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=11167&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"9318eb604f79d6dd6dde8b36a802049c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f9198e04-44a0-4de3-9a0d-085104a13dbf
+      X-Runtime:
+      - '0.009931'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"86","type":"swipe","attributes":{"id":86,"user_id":1,"movie_id":11167,"rating":1}}}'
+  recorded_at: Mon, 10 May 2021 03:49:03 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"0e3d25b1916aecd431bd068a8430e2d2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8a953861-b6b9-43af-a2ce-cd728fb395b5
+      X-Runtime:
+      - '0.358422'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"12574","type":"movie","attributes":{"title":"Signed,
+        Sealed, Delivered","tmdb_id":61870,"poster_path":"/s90b8UH0cpYh7Km6H9KlvZss8SN.jpg","description":"Three
+        students have to find a way to free their teacher''s soul from an enchanted
+        amulet.","genres":[{"id":7,"name":"Adventure","created_at":"2021-04-17T04:01:07.181Z","updated_at":"2021-04-17T04:01:07.181Z","tmdb_id":12},{"id":16,"name":"Family","created_at":"2021-04-17T04:01:18.392Z","updated_at":"2021-04-17T04:01:18.392Z","tmdb_id":10751},{"id":11,"name":"Fantasy","created_at":"2021-04-17T04:01:08.581Z","updated_at":"2021-04-17T04:01:08.581Z","tmdb_id":14},{"id":8,"name":"Science
+        Fiction","created_at":"2021-04-17T04:01:07.191Z","updated_at":"2021-04-17T04:01:07.191Z","tmdb_id":878}],"vote_average":7.0,"vote_count":1,"year":"2010"}}}'
+  recorded_at: Mon, 10 May 2021 03:49:04 GMT
 recorded_with: VCR 6.0.0

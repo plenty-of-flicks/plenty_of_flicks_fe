@@ -4,7 +4,7 @@
 
 <div class="movie-display">
   <div class="movie-title">
-    <h1><%= @movie.title %> (<%= @movie.year %>)</h1>
+    <h1 id='movie-title'><%= @movie.title %> (<%= @movie.year %>)</h1>
   </div>
 
   <div class="movie-info">
@@ -20,18 +20,16 @@
           <h3>
             Genres:<br>
           </h3>
-      </div>
           <h4>
             <% @movie.genres.each do |genre| %>
               <%= genre %><%= ', ' unless genre == @movie.genres.last %>
             <% end %>
           </h4>
         <% end %>
-
+      </div>
 
       <div class="movie-rating">
         <h3>Rating:</h3>
-      </div>
         <h4>
           <% if @movie.vote_average %>
             <%= @movie.vote_average %>/10
@@ -45,10 +43,11 @@
           <% end %>
           Total Votes
         </h4>
+      </div>
       <div class="movie-description">
         <h3>Description:</h3>
-      </div>
         <h4><%= @movie.description %></h4>
+      </div>
     </div>
   </div>
 </div>

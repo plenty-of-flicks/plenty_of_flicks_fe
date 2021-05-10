@@ -4,7 +4,7 @@
 
 <div class="movie-display">
   <div class="movie-title">
-    <h1><%= @movie.title %> (<%= @movie.year %>)</h1>
+    <h1 id='movie-title'><%= @movie.title %> (<%= @movie.year %>)</h1>
   </div>
 
   <div class="movie-info">
@@ -17,21 +17,20 @@
     <div class="movie-details">
       <div class="movie-genres">
         <% if @movie.genres %>
-          <h3>
-            Genres:<br>
+          <h3 id='movie-header'>
+            Genres:
           </h3>
-      </div>
           <h4>
             <% @movie.genres.each do |genre| %>
               <%= genre %><%= ', ' unless genre == @movie.genres.last %>
             <% end %>
           </h4>
         <% end %>
+      </div>
 
 
       <div class="movie-rating">
-        <h3>Rating:</h3>
-      </div>
+        <h3 id='movie-header'>Rating:</h3>
         <h4>
           <% if @movie.vote_average %>
             <%= @movie.vote_average %>/10
@@ -45,10 +44,11 @@
           <% end %>
           Total Votes
         </h4>
-      <div class="movie-description">
-        <h3>Description:</h3>
       </div>
+      <div class="movie-description">
+        <h3 id='movie-header'>Description:</h3>
         <h4><%= @movie.description %></h4>
+      </div>
     </div>
   </div>
 </div>
@@ -56,6 +56,10 @@
 <div class="swipe-links">
   <div class="swipe-left-link">
     <%= link_to image_tag('no_icon.png', size:200, class: 'swipe-link'), swipe_path(@filter.merge(movie_id: @movie.id, rating: 0)) %>
+  </div>
+
+  <div class="swipe-prompt">
+    <h2>Want to<br>Watch it?</h2>
   </div>
 
   <div class="swipe-right-link">

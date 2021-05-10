@@ -18,6 +18,53 @@
 body {
   background: #393536;
   background-image: url(/assets/plenty_of_flicks_logo.png);
+  font-family: 'blogger';
+}
+
+@font-face {
+    font-family: 'emerald-grey';
+    src: url('/fonts/EmeraldGrey.ttf');
+}
+
+@font-face {
+    font-family: 'blogger';
+    src: url('/fonts/Blogger Sans.ttf');
+}
+
+@font-face {
+    font-family: 'blogger-bold';
+    src: url('/fonts/Blogger Sans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'blogger-medium';
+    src: url('/fonts/Blogger Sans-Medium.ttf');
+}
+
+h1 {
+  font-family: 'emerald-grey';
+  font-size: xxx-large;
+  color: #FF001B;
+}
+
+h2 {
+  font-family: 'emerald-grey';
+  font-size: xx-large;
+}
+
+h3 {
+  font-family: 'blogger';
+  font-size: xx-large;
+}
+
+h4 {
+  font-family: 'blogger';
+  font-size: large;
+}
+
+p {
+  font-family: 'blogger';
+  font-size: medium;
 }
 
 /* navbar styling */
@@ -51,14 +98,87 @@ body {
 
 .app-description {
   background: #FFEA93;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   border: 2px solid black;
   opacity: 92%;
   text-align: center;
-  margin: 20px;
-  border-radius: 40px;
+  border-radius: 30px;
   box-shadow: 1.5px 4px #363631;
+}
+
+.app-problem {
+  background: white;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 1px 2px #363631;
+}
+
+.enter-pof {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#enter-pof-text {
+  background: white;
+  margin: 10px;
+  padding: 30px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 1px 2px #363631;
+}
+
+.app-instructions {
+  background: white;
+  margin: 10px;
+  padding: 30px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 1px 2px #363631;
+}
+
+.no-yes-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.no-or-yes {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#description-opener {
+  font-family: blogger-medium;
+  text-decoration: underline;
+  color: #FF001B;
+}
+
+#instruction-opener {
+  text-decoration: underline;
+  color: #FF001B;
+}
+
+#instruction-step {
+  text-decoration: underline;
+  color: #FF001B;
 }
 
 /* profile show styling */
@@ -120,6 +240,16 @@ body {
   text-align: center;
   margin: 20px;
 }
+
+.movie-title {
+  background: white;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+}
+
 .movie-info {
   display: flex;
   flex-direction: row;
@@ -167,13 +297,41 @@ body {
   margin: 5px; */
 }
 
+#movie-header {
+  text-decoration: underline;
+}
+
+#movie-title {
+  color: black;
+}
+
 .swipe-links {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: stretch;
-  align-content: stretch;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.swipe-prompt {
+  // background: white;
+  // margin: 5px;
+  // padding: 5px;
+  // border: 2px solid black;
+  // opacity: 92%;
+  // text-align: center;
+
+  background: #FFEA93;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 1.5px 4px #363631;
+
 }
 
 /* admin index page */
@@ -224,6 +382,7 @@ body {
 .friend-info {
   background: white;
   margin: 5px;
+  margin-bottom: 20px;
   padding: 5px;
   border: 2px solid black;
   opacity: 92%;
@@ -276,6 +435,17 @@ body {
   justify-content: space-around;
   align-items: stretch;
   align-content: stretch;
+}
+
+.group-friends {
+  background: white;
+  margin: 15px;
+  padding: 5px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 2px #363631;
 }
 
 /* groups show page */
