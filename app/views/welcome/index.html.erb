@@ -3,20 +3,52 @@
 </div>
 
 <div class="app-description">
-  <p>We all know the struggle.</p>
-  <p>
-    You sit down to watch a movie with a group of friends or significant other, and spend more time picking out a suitable flick than actually watching the movie.
-  </p>
-  <h3>Enter PoF.</h3>
-  <p>
-    <% if current_user %>
-      Log in with google
-    <% else %>
-      <%= link_to 'Log in with google', google_login_path %>
-    <% end %>
-    and click <%= link_to 'Discover', discover_index_path %> to swipe through available movies, and build a collection of flicks you want to watch.
-  </p>
-  <p>
-    When it's time to watch with friends, create a party, and we'll tell you which movies you ALL want to watch.
-  </p>
+  <h3 id='description-opener'>We all know the struggle.</h3>
+  <div class="app-problem">
+    <h4>
+      You sit down to watch a movie with a group of friends or significant other, and spend more time picking out a suitable flick than actually watching the movie.
+    </h4>
+  </div>
+  <div class="enter-pof">
+    <div class="enter-pof-logo">
+      <%= image_tag 'plenty_of_flicks_logo', width: 150 %>
+    </div>
+    <h1>Enter<br>Plenty of Flicks</h1>
+    <div class="enter-pof-logo">
+      <%= image_tag 'plenty_of_flicks_logo', width: 150 %>
+    </div>
+  </div>
+</div>
+<div class="app-description">
+  <div class="app-instructions">
+    <h3 id='instruction-opener'>How it Works:</h3>
+    <h4>
+      <div id="instruction-step">
+        Step #1:
+      </div>
+      <% if current_user %>
+        Log in with google.
+      <% else %>
+        <%= link_to 'Log in with google', google_login_path %>.
+      <% end %>
+    </h4>
+    <h4>
+      <div id="instruction-step">
+        Step #2:
+      </div>
+      Click <%= link_to 'Movies', discover_index_path %> to swipe through available movies, and build a collection of flicks you want to watch.
+    </h4>
+    <h4>
+      <div id="instruction-step">
+        Step #3:
+      </div>
+      Invite your friends to join the app, and click <%= link_to 'Friends', friends_path %> to add them to your friendslist.
+    </h4>
+    <h4>
+      <div id="instruction-step">
+        Step #4:
+      </div>
+      When it's time to watch a movie, click <%= link_to 'Groups', groups_path %> to make a group with the friends you'll be watching with. We'll give you a list of flicks that you ALL want to watch, and information about where you can watch them.
+    </h4>
+  </div>
 </div>
