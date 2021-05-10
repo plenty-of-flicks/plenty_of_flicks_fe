@@ -1402,109 +1402,6 @@ http_interactions:
   recorded_at: Sun, 09 May 2021 08:51:25 GMT
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 58e02d1d-be1b-4e73-9cb4-5077d320c680
-      X-Runtime:
-      - '0.083129'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Mon, 10 May 2021 03:49:02 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d200db90956fc72d70ebd53dc4a5c3a9"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 067ccdfc-010a-4fae-b160-5c9672bf93ee
-      X-Runtime:
-      - '0.607589'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1804","type":"movie","attributes":{"title":"1000 Mabrouk","tmdb_id":44090,"poster_path":"/46M0O969Ic55mXzIVWdfGHPgAid.jpg","description":"About
-        a man who wakes up one morning to discover that the day repeats, a carbon
-        copy of the day before, trapping him in an inescapable vicious circle. This
-        man has a dream to live for 100 years, however he is living for one day only
-        and that day keep repeating to show him the negative and positive things in
-        his life.","genres":[{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35},{"id":3,"name":"Drama","created_at":"2021-04-17T04:01:05.978Z","updated_at":"2021-04-17T04:01:05.978Z","tmdb_id":18}],"vote_average":6.3,"vote_count":26,"year":"2009"}}}'
-  recorded_at: Mon, 10 May 2021 03:49:02 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=1804&rating=0&user_id=1"
     body:
       encoding: UTF-8
@@ -1554,14 +1451,16 @@ http_interactions:
       string: '{"data":{"id":"85","type":"swipe","attributes":{"id":85,"user_id":1,"movie_id":1804,"rating":0}}}'
   recorded_at: Mon, 10 May 2021 03:49:02 GMT
 - request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.4.1
+      Content-Length:
+      - '0'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -1588,20 +1487,165 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"a2af98dff545560ff6a83c12c4b8043d"
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 98c12f14-af4a-40ce-8a93-d2f2dd8e5488
+      - 5c680dc4-ac5e-4c28-bdfa-7fcdd88a8421
       X-Runtime:
-      - '0.407252'
+      - '1.038393'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7681","type":"movie","attributes":{"title":"The House
-        That Dripped Blood","tmdb_id":39261,"poster_path":"/jP0G5M0MNEPKkcnjaMerO6AxelQ.jpg","description":"A
-        Scotland Yard investigator looks into four mysterious cases involving an unoccupied
-        house.","genres":[{"id":12,"name":"Horror","created_at":"2021-04-17T04:01:08.820Z","updated_at":"2021-04-17T04:01:08.820Z","tmdb_id":27},{"id":13,"name":"Mystery","created_at":"2021-04-17T04:01:08.831Z","updated_at":"2021-04-17T04:01:08.831Z","tmdb_id":9648}],"vote_average":6.3,"vote_count":87,"year":"1971"}}}'
-  recorded_at: Mon, 10 May 2021 03:49:03 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Mon, 10 May 2021 22:49:01 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"8d2fb42ee2235e1fc34affe75cfed050"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '092ad826-030d-4781-8719-af8f96422f63'
+      X-Runtime:
+      - '0.673091'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiODg4IiwidHlwZSI6Im1vdmllIiwiYXR0cmlidXRlcyI6eyJ0aXRsZSI6IlllcyBEYXkiLCJ0bWRiX2lkIjo2Mzg1OTcsInBvc3Rlcl9wYXRoIjoiL3JlanJEOW92VEhKYmZtcExNMG1iRWxpRVBWNi5qcGciLCJkZXNjcmlwdGlvbiI6IkEgbW9tIGFuZCBkYWQgd2hvIHVzdWFsbHkgc2F5IG5vIGRlY2lkZSB0byBzYXkgeWVzIHRvIHRoZWlyIGtpZHMnIHdpbGRlc3QgcmVxdWVzdHMg4oCUIHdpdGggYSBmZXcgZ3JvdW5kIHJ1bGVzIOKAlCBvbiBhIHdoaXJsd2luZCBkYXkgb2YgZnVuIGFuZCBhZHZlbnR1cmUuIiwiZ2VucmVzIjpbeyJpZCI6OSwibmFtZSI6IkNvbWVkeSIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA3LjQ2OVoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNy40NjlaIiwidG1kYl9pZCI6MzV9LHsiaWQiOjE2LCJuYW1lIjoiRmFtaWx5IiwiY3JlYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MTguMzkyWiIsInVwZGF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjE4LjM5MloiLCJ0bWRiX2lkIjoxMDc1MX1dLCJ2b3RlX2F2ZXJhZ2UiOjcuMCwidm90ZV9jb3VudCI6NDgwLCJ5ZWFyIjoiMjAyMSJ9fX0=
+  recorded_at: Mon, 10 May 2021 22:49:02 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=888&rating=0&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"af975019ed4fc5ca5d8c9ad2e3b2e286"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dab67e1c-09bc-4ea1-b5bf-9502c1dd5d04
+      X-Runtime:
+      - '0.022853'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"93","type":"swipe","attributes":{"id":93,"user_id":1,"movie_id":888,"rating":0}}}'
+  recorded_at: Mon, 10 May 2021 22:49:02 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"b01f8a6f32be8d170fa9f5f8f25cdf86"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d5aac705-f841-414e-96bb-e5b54752dfa5
+      X-Runtime:
+      - '0.517429'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiMTIxMjQiLCJ0eXBlIjoibW92aWUiLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiTmluYSBGb3JldmVyIiwidG1kYl9pZCI6MzIzNjk0LCJwb3N0ZXJfcGF0aCI6Ii9sNmZJYU1qTXg0YkNITHZnQ2NuTmZXY3RmbTIuanBnIiwiZGVzY3JpcHRpb24iOiJIb2xseSBsb3ZlcyBSb2IgYW5kIHRyaWVzIHRvIGhlbHAgaGltIHRocm91Z2ggaGlzIGdyaWVmIOKAkyBldmVuIGlmIGl0IG1lYW5zIGNvbnRlbmRpbmcgd2l0aCBoaXMgZGVhZCBnaXJsZnJpZW5kIE5pbmEsIHdobyBjb21lcyBiYWNrLCBibG9vZHkgYW5kIGJyb2tlbiwgZXZlcnkgdGltZSB0aGV5IG1ha2UgbG92ZSIsImdlbnJlcyI6W3siaWQiOjEyLCJuYW1lIjoiSG9ycm9yIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MDguODIwWiIsInVwZGF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA4LjgyMFoiLCJ0bWRiX2lkIjoyN30seyJpZCI6OSwibmFtZSI6IkNvbWVkeSIsImNyZWF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA3LjQ2OVoiLCJ1cGRhdGVkX2F0IjoiMjAyMS0wNC0xN1QwNDowMTowNy40NjlaIiwidG1kYl9pZCI6MzV9LHsiaWQiOjUsIm5hbWUiOiJSb21hbmNlIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MDYuNjQxWiIsInVwZGF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA2LjY0MVoiLCJ0bWRiX2lkIjoxMDc0OX1dLCJ2b3RlX2F2ZXJhZ2UiOjUuMiwidm90ZV9jb3VudCI6MTA2LCJ5ZWFyIjoiMjAxNSJ9fX0=
+  recorded_at: Mon, 10 May 2021 22:49:02 GMT
 recorded_with: VCR 6.0.0
