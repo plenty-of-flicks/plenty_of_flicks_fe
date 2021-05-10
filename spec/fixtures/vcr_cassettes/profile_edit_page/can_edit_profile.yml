@@ -296,7 +296,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.4.1
       Content-Length:
       - '0'
       Accept-Encoding:
@@ -329,15 +329,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 72de81ea-10fd-44eb-8b01-731b950140df
+      - 16dd8bcc-6c56-440f-9117-fa7b1794034b
       X-Runtime:
-      - '0.003350'
+      - '0.003580'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Mon, 10 May 2021 03:49:05 GMT
+  recorded_at: Mon, 10 May 2021 22:49:04 GMT
 - request:
     method: patch
     uri: "<POF_BE>/api/v1/users/12345678910?email=fake@example.com&first_name=Fake&image=https://image.shutterstock.com/shutterstock/photos/1036253818/display_1500/stock-photo-image-of-excited-screaming-young-woman-standing-isolated-over-yellow-background-looking-camera-1036253818.jpg&last_name=Name"
@@ -346,7 +346,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.4.1
       Content-Length:
       - '0'
       Accept-Encoding:
@@ -379,15 +379,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6019c70c-64d8-4124-bdbf-00e31d652693
+      - dd2bf142-fc0f-4452-bec3-f68452752307
       X-Runtime:
-      - '0.020108'
+      - '0.006599'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Fake","last_name":"Name","email":"fake@example.com","uid":"12345678910","image":"https://image.shutterstock.com/shutterstock/photos/1036253818/display_1500/stock-photo-image-of-excited-screaming-young-woman-standing-isolated-over-yellow-background-looking-camera-1036253818.jpg"}}}'
-  recorded_at: Mon, 10 May 2021 03:49:05 GMT
+  recorded_at: Mon, 10 May 2021 22:49:04 GMT
 - request:
     method: patch
     uri: "<POF_BE>/api/v1/users/12345678910?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King"
@@ -396,7 +396,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.4.1
       Content-Length:
       - '0'
       Accept-Encoding:
@@ -429,13 +429,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ab1b99b9-028e-428f-82e7-295706498984
+      - b5cd035e-4689-4e48-9f4b-ccab48b67a31
       X-Runtime:
-      - '0.009468'
+      - '0.007081'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Mon, 10 May 2021 03:49:05 GMT
+  recorded_at: Mon, 10 May 2021 22:49:04 GMT
 recorded_with: VCR 6.0.0

@@ -56,7 +56,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.4.1
       Content-Length:
       - '0'
       Accept-Encoding:
@@ -89,13 +89,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 99cf5e05-d08c-47e1-8dcc-96f7616d34d2
+      - b8f89435-c035-4732-9ce1-21a0a9b7cb0a
       X-Runtime:
-      - '0.003968'
+      - '0.004526'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Mon, 10 May 2021 03:49:05 GMT
+  recorded_at: Mon, 10 May 2021 22:49:04 GMT
 recorded_with: VCR 6.0.0
