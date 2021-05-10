@@ -317,6 +317,7 @@ p {
 .friend-info {
   background: white;
   margin: 5px;
+  margin-bottom: 20px;
   padding: 5px;
   border: 2px solid black;
   opacity: 92%;
@@ -369,6 +370,17 @@ p {
   justify-content: space-around;
   align-items: stretch;
   align-content: stretch;
+}
+
+.group-friends {
+  background: white;
+  margin: 15px;
+  padding: 5px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 2px #363631;
 }
 
 /* groups show page */
