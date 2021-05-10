@@ -1302,108 +1302,6 @@ http_interactions:
   recorded_at: Sun, 09 May 2021 06:17:34 GMT
 - request:
     method: post
-    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"d5aae05fc718ceb6d2732147f5647f7a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - b21510d6-03a0-489e-bcf9-ee62d182c380
-      X-Runtime:
-      - '0.003792'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
-  recorded_at: Sun, 09 May 2021 08:51:26 GMT
-- request:
-    method: get
-    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"8dd6bf2351ae792129dd111db08efbdf"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 0b0a077f-77ad-4531-a2fd-8fb692e1c497
-      X-Runtime:
-      - '0.386432'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"6700","type":"movie","attributes":{"title":"The Poison
-        Rose","tmdb_id":529983,"poster_path":"/gSzyUmg719TgAxarFZYWjLLMqvS.jpg","description":"A
-        down-on-his-luck PI is hired by his old flame to investigate a murder. But
-        while the case at first appears routine, it slowly reveals itself to be a
-        complex interwoven web of crimes, suspects and dead bodies.","genres":[{"id":1,"name":"Thriller","created_at":"2021-04-17T04:01:05.640Z","updated_at":"2021-04-17T04:01:05.640Z","tmdb_id":53},{"id":2,"name":"Crime","created_at":"2021-04-17T04:01:05.930Z","updated_at":"2021-04-17T04:01:05.930Z","tmdb_id":80}],"vote_average":4.4,"vote_count":181,"year":"2019"}}}'
-  recorded_at: Sun, 09 May 2021 08:51:26 GMT
-- request:
-    method: post
     uri: "<POF_BE>/api/v1/swipes?movie_id=6700&rating=1&user_id=1"
     body:
       encoding: UTF-8
@@ -1453,6 +1351,56 @@ http_interactions:
       string: '{"data":{"id":"81","type":"swipe","attributes":{"id":81,"user_id":1,"movie_id":6700,"rating":1}}}'
   recorded_at: Sun, 09 May 2021 08:51:26 GMT
 - request:
+    method: post
+    uri: "<POF_BE>/api/v1/users?email=nickmaxking@gmail.com&first_name=Nick&image=https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg&last_name=King&uid=12345678910"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d5aae05fc718ceb6d2732147f5647f7a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9e187a61-4a7a-45b5-8f25-cbd95dcb3191
+      X-Runtime:
+      - '0.003704'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"first_name":"Nick","last_name":"King","email":"nickmaxking@gmail.com","uid":"12345678910","image":"https://lh6.googleusercontent.com/-hEH5aK9fmMI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucntLnugtaOVsqmvJGm89fFbDJ6GaQ/s96-c/photo.jpg"}}}'
+  recorded_at: Mon, 10 May 2021 03:49:03 GMT
+- request:
     method: get
     uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
     body:
@@ -1487,20 +1435,120 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"501c5017e2e59909128a0be3663667c8"
+      - W/"d1be7dfe1f6d14b7f42a3d8d1d501ad8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8e9f9775-49d2-476e-ae8c-4e31a6ba9dd4
+      - 946cc93b-971f-4371-9d87-d845241d2c23
       X-Runtime:
-      - '0.359839'
+      - '0.398809'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiMTExNjciLCJ0eXBlIjoibW92aWUiLCJhdHRyaWJ1dGVzIjp7InRpdGxlIjoiQ29pbiBMb2NrZXIgR2lybCIsInRtZGJfaWQiOjMzNjc0NCwicG9zdGVyX3BhdGgiOiIvNjY3NVFTTGVxY0FqTXhoNzRNUW9xR3V5V3UzLmpwZyIsImRlc2NyaXB0aW9uIjoiQSBjaGlsZCBhYmFuZG9uZWQgaW4gYSBzdWJ3YXkgY29pbiBsb2NrZXIgaXMgc29sZCB0byBhIHJ1dGhsZXNzIGFuZCBjYWxjdWxhdGluZyBsb2FuIHNoYXJrIGFuZCBnYW5nc3RlciBib3NzIGR1YmJlZCDigJxNb3RoZXLigJ0gKEtpbSBIeWUtc29vKSwgd2hvIHJ1bnMgYW4gb3JnYW4taGFydmVzdGluZyByaW5nIGluIEluY2hlb27igJlzIENoaW5hdG93bi4gTmFtZWQgSWwtWW91bmcgKEtpbSBHby1FdW4pLCB0aGUgYmFieSBnaXJsIGdyb3dzIGludG8gTW90aGVy4oCZcyBsb3lhbCByaWdodC1oYW5kIGVuZm9yY2VyIGFuZCBpcyBncm9vbWVkIHRvIGJlIGhlciBldmVudHVhbCBzdWNjZXNzb3IuIEJ1dCB3aGVuIElsLVlvdW5n4oCZcyBsb3lhbHR5IHRvIE1vdGhlciB3YXZlcnMsIHRoZSBjbGFzaCBiZXR3ZWVuIHRoZSB0d28gdW5sZWFzaGVzIGEgbWVyY2lsZXNzIHRpZGFsIHdhdmUgb2YgYmxvb2Qtc29ha2VkIHJldHJpYnV0aW9uIGFuZCBzdHJpZmUuIiwiZ2VucmVzIjpbeyJpZCI6MywibmFtZSI6IkRyYW1hIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MDUuOTc4WiIsInVwZGF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA1Ljk3OFoiLCJ0bWRiX2lkIjoxOH0seyJpZCI6MSwibmFtZSI6IlRocmlsbGVyIiwiY3JlYXRlZF9hdCI6IjIwMjEtMDQtMTdUMDQ6MDE6MDUuNjQwWiIsInVwZGF0ZWRfYXQiOiIyMDIxLTA0LTE3VDA0OjAxOjA1LjY0MFoiLCJ0bWRiX2lkIjo1M31dLCJ2b3RlX2F2ZXJhZ2UiOjYuOCwidm90ZV9jb3VudCI6NzIsInllYXIiOiIyMDE1In19fQ==
+  recorded_at: Mon, 10 May 2021 03:49:03 GMT
+- request:
+    method: post
+    uri: "<POF_BE>/api/v1/swipes?movie_id=11167&rating=1&user_id=1"
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"9318eb604f79d6dd6dde8b36a802049c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f9198e04-44a0-4de3-9a0d-085104a13dbf
+      X-Runtime:
+      - '0.009931'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2083","type":"movie","attributes":{"title":"Bride of
-        Chucky","tmdb_id":11932,"poster_path":"/mAGviFp1ufYM3EaZBSrjPiKPBt6.jpg","description":"Chucky
-        hooks up with another murderous doll, the bridal gown-clad Tiffany, for a
-        Route 66 murder spree with their unwitting hosts.","genres":[{"id":12,"name":"Horror","created_at":"2021-04-17T04:01:08.820Z","updated_at":"2021-04-17T04:01:08.820Z","tmdb_id":27},{"id":9,"name":"Comedy","created_at":"2021-04-17T04:01:07.469Z","updated_at":"2021-04-17T04:01:07.469Z","tmdb_id":35}],"vote_average":5.9,"vote_count":1162,"year":"1998"}}}'
-  recorded_at: Sun, 09 May 2021 08:51:27 GMT
+      string: '{"data":{"id":"86","type":"swipe","attributes":{"id":86,"user_id":1,"movie_id":11167,"rating":1}}}'
+  recorded_at: Mon, 10 May 2021 03:49:03 GMT
+- request:
+    method: get
+    uri: "<POF_BE>/api/v1/movies/random_available?user_id=1"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"0e3d25b1916aecd431bd068a8430e2d2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8a953861-b6b9-43af-a2ce-cd728fb395b5
+      X-Runtime:
+      - '0.358422'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"12574","type":"movie","attributes":{"title":"Signed,
+        Sealed, Delivered","tmdb_id":61870,"poster_path":"/s90b8UH0cpYh7Km6H9KlvZss8SN.jpg","description":"Three
+        students have to find a way to free their teacher''s soul from an enchanted
+        amulet.","genres":[{"id":7,"name":"Adventure","created_at":"2021-04-17T04:01:07.181Z","updated_at":"2021-04-17T04:01:07.181Z","tmdb_id":12},{"id":16,"name":"Family","created_at":"2021-04-17T04:01:18.392Z","updated_at":"2021-04-17T04:01:18.392Z","tmdb_id":10751},{"id":11,"name":"Fantasy","created_at":"2021-04-17T04:01:08.581Z","updated_at":"2021-04-17T04:01:08.581Z","tmdb_id":14},{"id":8,"name":"Science
+        Fiction","created_at":"2021-04-17T04:01:07.191Z","updated_at":"2021-04-17T04:01:07.191Z","tmdb_id":878}],"vote_average":7.0,"vote_count":1,"year":"2010"}}}'
+  recorded_at: Mon, 10 May 2021 03:49:04 GMT
 recorded_with: VCR 6.0.0
