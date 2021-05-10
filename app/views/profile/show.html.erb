@@ -3,10 +3,12 @@
 </div>
 
 <div class="profile-info">
-  <h3>First Name: <%= current_user.first_name %></h3>
-  <h3>Last Name: <%= current_user.last_name %></h3>
-  <h3>Email: <%= current_user.email %></h3>
-  <h3>User Image: <%= image_tag(current_user.image) %></h3>
+  <h1>Your Profile</h1>
+  <h4>First Name: <%= current_user.first_name %></h4>
+  <h4>Last Name: <%= current_user.last_name %></h4>
+  <h4>Email: <%= current_user.email %></h4>
+  <h4>User Image:<br><br><%= image_tag(current_user.image, height: 100) %></h4>
 
   <%= button_to 'Edit Profile', profile_edit_path, method: :get %>
+  <br>
 </div>

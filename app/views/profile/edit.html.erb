@@ -3,15 +3,16 @@
 </div>
 
 <div class="profile-edit-form">
+  <h1>Edit Profile</h1>
   <%= form_with(url: profile_update_path, method: :patch) do |f| %>
-    <h3><%= f.label('First Name') %>
-    <%= f.text_field :first_name %></h3>
-    <h3><%= f.label('Last Name') %>
-    <%= f.text_field :last_name %></h3>
-    <h3><%= f.label('Email') %>
-    <%= f.text_field :email %></h3>
-    <h3><%= f.label('User Image') %>
-    <%= f.text_field :image %></h3><br>
+    <h4><%= f.label('First Name:') %>
+    <%= f.text_field :first_name %></h4>
+    <h4><%= f.label('Last Name:') %>
+    <%= f.text_field :last_name %></h4>
+    <h4><%= f.label('Email:') %>
+    <%= f.text_field :email %></h4>
+    <h4><%= f.label('User Image:') %>
+    <%= f.text_field :image %></h4><br>
 
     <%= submit_tag("Update Profile") %>
   <% end %>
