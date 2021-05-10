@@ -260,13 +260,41 @@ p {
   margin: 5px; */
 }
 
+#movie-header {
+  text-decoration: underline;
+}
+
+#movie-title {
+  color: black;
+}
+
 .swipe-links {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: stretch;
-  align-content: stretch;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.swipe-prompt {
+  // background: white;
+  // margin: 5px;
+  // padding: 5px;
+  // border: 2px solid black;
+  // opacity: 92%;
+  // text-align: center;
+
+  background: #FFEA93;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 1.5px 4px #363631;
+
 }
 
 /* admin index page */
