@@ -120,13 +120,28 @@ p {
 
 .app-instructions {
   background: white;
-  margin: 5px;
-  padding: 5px;
+  margin: 10px;
+  padding: 30px;
   border: 2px solid black;
   opacity: 92%;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 50px;
   box-shadow: 1px 2px #363631;
+}
+
+.no-yes-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.no-or-yes {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #description-opener {

@@ -36,17 +36,32 @@
       <div id="instruction-step">
         Step #2:
       </div>
-      Click <%= link_to 'Movies', discover_index_path %> to swipe through available movies, and build a collection of flicks you want to watch.
+      Click <%= link_to 'Movies', discover_index_path %> to cycle through available movies.<br><br>
+      <div id="instruction-step">
+        Step #3:
+      </div>
+      As you're cycling through movies, click one of the icons below to either add movies to your watchlist or remove them from your discover pool, and build a collection of flicks you want to watch.
+      <div class="no-yes-icons">
+        <div class="yes-icon-info">
+          <%= image_tag('yes_icon.png', width: 70) %>
+        </div>
+        <div class="no-or-yes">
+          or
+        </div>
+        <div class="no-icon-info">
+          <%= image_tag('no_icon.png', width: 70) %>
+        </div>
+      </div>
     </h4>
     <h4>
       <div id="instruction-step">
-        Step #3:
+        Step #4:
       </div>
       Invite your friends to join the app, and click <%= link_to 'Friends', friends_path %> to add them to your friendslist.
     </h4>
     <h4>
       <div id="instruction-step">
-        Step #4:
+        Step #5:
       </div>
       When it's time to watch a movie, click <%= link_to 'Groups', groups_path %> to make a group with the friends you'll be watching with. We'll give you a list of flicks that you ALL want to watch, and information about where you can watch them.
     </h4>
