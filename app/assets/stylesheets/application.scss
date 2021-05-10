@@ -31,6 +31,16 @@ body {
     src: url('/fonts/Blogger Sans.ttf');
 }
 
+@font-face {
+    font-family: 'blogger-bold';
+    src: url('/fonts/Blogger Sans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'blogger-medium';
+    src: url('/fonts/Blogger Sans-Medium.ttf');
+}
+
 h1 {
   font-family: 'emerald-grey';
   font-size: xxx-large;
@@ -104,7 +114,7 @@ p {
   border: 2px solid black;
   opacity: 92%;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 1px 2px #363631;
 }
 
@@ -116,6 +126,17 @@ p {
   align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+#enter-pof-text {
+  background: white;
+  margin: 10px;
+  padding: 30px;
+  border: 2px solid black;
+  opacity: 92%;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 1px 2px #363631;
 }
 
 .app-instructions {
@@ -145,6 +166,7 @@ p {
 }
 
 #description-opener {
+  font-family: blogger-medium;
   text-decoration: underline;
   color: #FF001B;
 }
