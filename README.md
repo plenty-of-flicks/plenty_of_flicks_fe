@@ -44,7 +44,7 @@ For usage on your local machine follow the instructions listed below:
  ```
 > 7. rails s
 > 8. Visit localhost:3000 in your web browser
-> 9. * For use with localhost BE domain, be sure to also run `rails s -p 8000` in your plenty_of_flicks_be directory
+> 9. ***For use with localhost BE domain, be sure to also run `rails s -p 8000` in your plenty_of_flicks_be directory***
 
 ## Dependencies
 
