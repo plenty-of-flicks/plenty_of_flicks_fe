@@ -24,7 +24,8 @@
 ### The Plenty of Flicks BE Repo
 
 > The Plenty of Flicks FE Repo utilizes the custom endpoints created by the BE repo to create a versatile client-facing web application. With the repo, users can log in/out with Google Omniauth, add movies from Netflix, Hulu and Amazon Prime Video to their watchlists, add friends, create groups, and view shared watchlists.
-> Please [visit the Plenty of Flicks FE Repo here](https://github.com/plenty-of-flicks/plenty_of_flicks_fe).
+> 
+> Please [visit the Plenty of Flicks BE Repo here](https://github.com/plenty-of-flicks/plenty_of_flicks_be).
 
 ## How to Install
 
