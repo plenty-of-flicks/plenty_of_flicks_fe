@@ -21,11 +21,11 @@
 
 > We all know the struggle. You sit down to watch a movie with a group of friends or significant other, and spend more time picking out a suitable flick than actually watching the movie. Enter Plenty of Flicks. Users can explore available movies on three supported subscription services (Netflix, Amazon Prime Video and Hulu), and add movies to their watchlist. When it's time to watch, users create a party with the group they want to watch with, and voila: PoF presents a list of movies they ALL want to watch.
 
-### The Plenty of Flicks BE Repo
+### The Plenty of Flicks FE Repo
 
 > The Plenty of Flicks FE Repo utilizes the custom endpoints created by the BE repo to create a versatile client-facing web application. With the repo, users can log in/out with Google Omniauth, add movies from Netflix, Hulu and Amazon Prime Video to their watchlists, add friends, create groups, and view shared watchlists.
 > 
-> Please [visit the Plenty of Flicks BE Repo here](https://github.com/plenty-of-flicks/plenty_of_flicks_be).
+> [Visit the Plenty of Flicks BE Repo here](https://github.com/plenty-of-flicks/plenty_of_flicks_be).
 
 ## How to Install
 
